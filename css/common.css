@@ -1,0 +1,43 @@
+body {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'PingFangSC-Regular',
+        'helvetica neue',
+        tahoma,
+        'PingFang SC',
+        'microsoft yahei',
+        arial,
+        'hiragino sans gb',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 页头内容版心 */
+.head-con {
+    width: 1200px;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* 页脚内容版心 */
+
+
+
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
