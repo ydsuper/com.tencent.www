@@ -78,6 +78,8 @@ $(function () {
 
     })
 
+
+    // 【主体】
     // 连接 -共生未来
     setTimeout(function () {
         $('.banner-txt').animate({

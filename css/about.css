@@ -1,0 +1,289 @@
+body {
+  height: 4333px;
+}
+
+.wrap-main {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.wrap-main .main-con {
+  width: 100%;
+}
+
+.main-con .mod-section-bg {
+  width: 100%;
+  height: 482px;
+  background: url(../images/about/brief-1.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.main-con .mod-con {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-con .mod-con h2 {
+  font-family: 'TencentSansw3';
+  font-size: 44px;
+  color: #fff;
+  margin-bottom: 8px;
+  margin-top: 202px;
+}
+
+.main-con .mod-elevator {
+  width: 100%;
+  height: 54px;
+  position: relative;
+  background-color: #fbfbfb;
+}
+
+.main-con .mod-elevator .ele-navigation {
+  width: 100%;
+  height: 54px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-con .mod-elevator .ele-nav-list {
+  width: 1200px;
+  height: 53px;
+  margin: 0 auto;
+  position: relative;
+  left: 16px;
+}
+
+.main-con .ele-nav-list > li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.main-con .ele-nav-list > li > a {
+  height: 53px;
+  line-height: 53px;
+  font-size: 16px;
+}
+
+.main-con .ele-nav-list .underline {
+  width: 64px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #0052d9;
+}
+
+.mod-ele-content {
+  width: 100%;
+}
+
+.mod-ele-content .compfe {
+  width: 1200px;
+  margin: 96px auto 0;
+}
+
+.mod-ele-content .compfe .compfe-con {
+  text-align: center;
+}
+
+.mod-ele-content .compfe h3 {
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.mod-ele-content .compfe h4 {
+  color: #2a2e2e;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 52px;
+}
+
+.mod-ele-content .compfe p {
+  color: #5F6464;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.mod-ele-content .vismis {
+  width: 1200px;
+  margin: 96px auto;
+}
+
+.mod-ele-content .vismis .vismis-con {
+  width: 100%;
+  height: 312px;
+  padding: 60px 96px;
+  background-color: #FBFBFB;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mod-ele-content .vismis .vismis-tit {
+  float: left;
+}
+
+.mod-ele-content .vismis .vismis-tit h3 {
+  color: #2A2E2E;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.mod-ele-content .vismis .vismis-txt {
+  float: right;
+  width: 390px;
+  height: 190px;
+  position: relative;
+}
+
+.mod-ele-content .vismis .vismis-txt h4 {
+  color: #2A2E2E;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.mod-ele-content .vismis .vismis-txt p {
+  color: #5F6464;
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 25px;
+}
+
+.mod-ele-content .vismis .vismis-txt::before {
+  content: ' ';
+  width: 1px;
+  height: 100%;
+  background: #D8D9DC;
+  position: absolute;
+  top: 0;
+  left: -60px;
+}
+
+.mod-ele-content .vismis .tencent-bg {
+  width: 824px;
+  position: absolute;
+  bottom: 0;
+  left: 82px;
+}
+
+.history-course .progress {
+  height: 384px;
+  background: url(../images/about/banner.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+}
+
+.history-course .progress > h3 {
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  text-align: center;
+  line-height: 45px;
+  margin-top: 150px;
+}
+
+.history-course > .progress > .progress-time {
+  width: 530px;
+  margin: 70px auto 0;
+}
+
+.history-course > .progress .node {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.history-course .node {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.history-course .node.active .core {
+  background-color: #fff;
+}
+
+.history-course .node > span {
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.history-course .node > .core {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.history-course .line {
+  float: left;
+  width: 100px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 11px;
+}
+
+.history-course > .history-con {
+  height: 426px;
+  background: #FBFBFB;
+  color: #5F6464;
+  overflow: hidden;
+}
+
+.history-course > .history-con .container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.history-course > .history-con .history-main {
+  width: 1000%;
+  position: absolute;
+}
+
+.history-course .history-main li {
+  float: left;
+  width: 384px;
+  margin-right: 25px;
+}
+
+.history-course .history-main .tit {
+  color: #2A2E2E;
+  line-height: 36px;
+  padding-bottom: 8px;
+  margin: 40px 0 18px;
+  border-bottom: 1px solid #D8D9DC;
+  font-size: 24px;
+  font-family: 'TencentSansw7';
+}
+
+.history-course .history-main .item {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+.history-course .history-main .item > .month {
+  float: left;
+  width: 40px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.history-course .history-main .item > .info {
+  width: 320px;
+  float: left;
+}
+/*# sourceMappingURL=about.css.map */

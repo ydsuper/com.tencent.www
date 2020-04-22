@@ -1,0 +1,305 @@
+body {
+    height: 4333px;
+}
+
+.wrap {}
+
+// 主体
+.wrap-main {
+    width: 100%;
+    margin-top: 72px;
+
+    .main-con {
+        width: 100%;
+    }
+}
+
+.main-con {
+    .mod-section-bg {
+        width: 100%;
+        height: 482px;
+        background: url(../images/about/brief-1.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+
+    .mod-con {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        h2 {
+            font-family: 'TencentSansw3';
+            font-size: 44px;
+            color: #fff;
+            margin-bottom: 8px;
+            margin-top: 202px;
+        }
+    }
+
+    .mod-elevator {
+        width: 100%;
+        height: 54px;
+        position: relative;
+        background-color: #fbfbfb;
+
+        .ele-navigation {
+            width: 100%;
+            height: 54px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ele-nav-list {
+            width: 1200px;
+            height: 53px;
+            margin: 0 auto;
+            position: relative;
+            left: 16px;
+        }
+    }
+
+    .ele-nav-list {
+
+        >li {
+            display: inline-block;
+            margin-right: 56px;
+
+            >a {
+                height: 53px;
+                line-height: 53px;
+                font-size: 16px;
+            }
+        }
+
+        .underline {
+            width: 64px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #0052d9;
+        }
+    }
+
+}
+
+// elevator导航内容
+.mod-ele-content {
+    width: 100%;
+
+    .compfe {
+        width: 1200px;
+        margin: 96px auto 0;
+
+        .compfe-con {
+            text-align: center;
+        }
+
+        h3 {
+            color: #2a2e2e;
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+        }
+
+        h4 {
+            color: #2a2e2e;
+            font-size: 20px;
+            line-height: 36px;
+            margin-top: 52px;
+        }
+
+        p {
+            color: #5F6464;
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+
+    // 愿景及使命
+    .vismis {
+        width: 1200px;
+        margin: 96px auto;
+
+        .vismis-con {
+            width: 100%;
+            height: 312px;
+            padding: 60px 96px;
+            background-color: #FBFBFB;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .vismis-tit {
+            float: left;
+
+            h3 {
+                color: #2A2E2E;
+                font-size: 30px;
+                font-family: 'TencentSansw7';
+            }
+        }
+
+        .vismis-txt {
+            float: right;
+            width: 390px;
+            height: 190px;
+            position: relative;
+
+            h4 {
+                color: #2A2E2E;
+                font-size: 20px;
+                line-height: 36px;
+            }
+
+            p {
+                color: #5F6464;
+                font-size: 14px;
+                margin-top: 16px;
+                line-height: 25px;
+            }
+
+            &::before {
+                content: ' ';
+                width: 1px;
+                height: 100%;
+                background: #D8D9DC;
+                position: absolute;
+                top: 0;
+                left: -60px;
+            }
+        }
+
+        .tencent-bg {
+            width: 824px;
+            position: absolute;
+            bottom: 0;
+            left: 82px;
+        }
+    }
+
+}
+
+// 发展历程
+.history-course {
+    .progress {
+        height: 384px;
+        background: url(../images/about/banner.jpg) no-repeat center;
+        background-size: cover;
+        color: #fff;
+        overflow: hidden;
+
+        >h3 {
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+            text-align: center;
+            line-height: 45px;
+            margin-top: 150px;
+        }
+    }
+
+    >.progress {
+        >.progress-time {
+            width: 530px;
+            margin: 70px auto 0;
+        }
+
+        .node {
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+    }
+
+    .node {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        &.active .core {
+            background-color: #fff;
+        }
+
+        >span {
+            width: 200px;
+            text-align: center;
+            font-size: 16px;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        >.core {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+    }
+
+    .line {
+        float: left;
+        width: 100px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: 11px;
+    }
+
+    >.history-con {
+        height: 426px;
+        background: #FBFBFB;
+        color: #5F6464;
+        overflow: hidden;
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .history-main {
+            width: 1000%;
+            position: absolute;
+        }
+    }
+
+    .history-main {
+        li {
+            float: left;
+            width: 384px;
+            margin-right: 25px;
+        }
+
+        .tit {
+            color: #2A2E2E;
+            line-height: 36px;
+            padding-bottom: 8px;
+            margin: 40px 0 18px;
+            border-bottom: 1px solid #D8D9DC;
+            font-size: 24px;
+            font-family: 'TencentSansw7';
+        }
+
+        .item {
+            font-size: 14px;
+            line-height: 25px;
+            margin-bottom: 18px;
+
+            >.month{
+                float: left;
+                width: 40px;
+                text-align: right;
+                margin-right: 10px;
+            }
+
+            >.info{
+                width: 320px;
+                float: left;
+            }
+        }
+    }
+}

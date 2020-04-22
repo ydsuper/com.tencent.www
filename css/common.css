@@ -50,8 +50,12 @@ body {
 }
 
 /* 页脚内容版心 */
-
-
+.footer-con {
+    width: 1200px;
+    height: 480px;
+    margin: 0px auto;
+    position: relative;
+}
 
 
 /* 清除浮动 */

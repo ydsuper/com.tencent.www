@@ -1,0 +1,365 @@
+/* 页头 */
+// 覆盖
+.head-show {
+    // display: none;
+    position: fixed;
+    width: 1920px;
+    height: 0px;
+    background: #fff;
+    opacity: 0;
+    z-index: 2;
+}
+
+// 头
+.wrap-head {
+    width: 100%;
+    // background-color: pink;
+    transition: all 0.2s linear;
+    position: relative;
+    z-index: 2;
+
+    // logo
+    .logo>a {
+        width: 168px;
+        height: 22px;
+        background: url(../images/menu_logo.png) no-repeat center;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 25px;
+        left: 0;
+
+        &.logo_show {
+            background: url(../images/menu_logo_hover.png) no-repeat center;
+            background-size: 100% 100%;
+        }
+    }
+
+
+    // 语言
+    .lang {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        font-size: 16px;
+        color: #fff;
+
+        .current {
+            opacity: 1;
+        }
+
+        >a {
+            color: #fff;
+            font-size: 16px;
+            font-family: "PingFangSC-Regular";
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &.a_show {
+                color: #2b2e2e;
+            }
+        }
+
+        >i {
+            font-style: italic;
+            font-size: 12px;
+            margin: 0 3px;
+            opacity: 0.7;
+            position: relative;
+            top: -2px;
+        }
+
+        &.lang_show {
+            color: #2b2e2e;
+        }
+    }
+}
+
+// 导航
+.head-nav {
+    position: absolute;
+    width: 672px;
+    height: 72px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 308px;
+    z-index: 3;
+
+    .nav-item {
+        float: left;
+        text-align: center;
+        margin-left: 72px;
+        position: relative;
+
+        >.title {
+            display: block;
+            height: 72px;
+            line-height: 72px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            opacity: 0.95;
+            transition: color .3s linear;
+
+            &:after {
+                content: "";
+                width: 100%;
+                height: 4px;
+                background-color: #194ac3;
+                position: absolute;
+                bottom: 19px;
+                left: 0;
+                opacity: 0;
+                transform: rotateY(90deg);
+                transition: all .3s ease-out;
+            }
+        }
+
+        &:hover .title::after {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+
+        .title_hover {
+            color: #2b2e2e;
+        }
+
+        .nav-hook {
+            display: none;
+            height: 445px;
+            position: absolute;
+            left: -36px;
+            top: 0px;
+            z-index: 1;
+        }
+    }
+
+    .nav-list {
+        display: none;
+        width: 160px;
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        margin-top: 13px;
+        margin-left: -80px;
+        z-index: 2;
+
+        &.list_hover {
+            animation: list_hover_show 0.2s ease-out;
+        }
+
+        >li {
+            width: 160px;
+            height: 50px;
+        }
+
+        a {
+            display: block;
+            font-size: 16px;
+            color: #2b2e2e;
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@keyframes list_hover_show {
+    0% {
+        transform: translate(0px, -30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+
+/* 页脚 */
+.wrap-footer {
+    width: 100%;
+    height: 480px;
+    background: #fbfbfb;
+    position: relative;
+    z-index: 1;
+
+    >.footer-con {
+        width: 1200px;
+        height: 480px;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .follow_us {
+        padding: 33px 0 25px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #f2f3f5;
+    }
+}
+
+// 关注我们
+.follow_us {
+    >p {
+        float: left;
+        font-size: 20px;
+        color: #5f6464;
+        margin-right: 33px;
+    }
+
+    .ways {}
+
+    li {
+        float: left;
+        margin-right: 28px;
+
+        a {
+            display: block;
+            position: relative;
+
+            &:hover {
+                .wechat {
+                    background: url(../images/icon_wechat_hover.png) no-repeat;
+                    background-size: 100% 100%;
+
+                    +img {
+                        opacity: 1;
+                    }
+                }
+
+                .weibo {
+                    background: url(../images/icon_weibo_hover.png) no-repeat;
+                    background-size: 100% 100%;
+
+                }
+
+                .twitter {
+                    background: url(../images/icon_twitter_hover.png) no-repeat;
+                    background-size: 100% 100%;
+
+                }
+
+                .in {
+                    background: url(../images/icon_in_hover.png) no-repeat;
+                    background-size: 100% 100%;
+
+                }
+            }
+        }
+
+        .icon {
+            display: block;
+            width: 28px;
+            height: 28px;
+            transition: background .2s ease-in-out;
+        }
+
+        .wechat {
+            background: url(../images/icon_wechat.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wechat+img {
+            display: block;
+            width: 176px;
+            position: absolute;
+            left: 0;
+            top: -186px;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.2s linear;
+        }
+
+        .weibo {
+            background: url(../images/icon_weibo.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .twitter {
+            background: url(../images/icon_twitter.png) no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .in {
+            background: url(../images/icon_in.png) no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+// 加入我们 联系我们 法律信息
+.join_us,
+.contact_us,
+.legal_info {
+    float: left;
+    width: 216px;
+
+    h3 {
+        color: #5f6464;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    li {
+        >a {
+            display: block;
+            color: #5f6464;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+// Tencent腾讯logo
+.logo_tencent {
+    height: 28px;
+    width: 212px;
+    position: absolute;
+    right: 75px;
+    top: 219px;
+
+    img {
+        width: 100%;
+    }
+}
+
+// 页脚底部
+.footer-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 51px;
+    left: 0px;
+
+    // 其他link
+    .links {
+        float: left;
+
+        li {
+            float: left;
+            margin-right: 20px;
+
+            >a {
+                color: #5f6464;
+                font-size: 14px;
+            }
+        }
+    }
+
+    // 版权
+    .copyright {
+        float: right;
+        font-size: 14px;
+        color: #5f6464;
+
+        .cr_br {
+            display: none;
+        }
+    }
+}
