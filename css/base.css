@@ -239,6 +239,7 @@
 }
 
 .follow_us li a:hover .wechat + img {
+  display: block;
   opacity: 1;
 }
 
@@ -271,7 +272,7 @@
 }
 
 .follow_us li .wechat + img {
-  display: block;
+  display: none;
   width: 176px;
   position: absolute;
   left: 0;

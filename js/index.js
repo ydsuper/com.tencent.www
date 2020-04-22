@@ -65,11 +65,13 @@ $(function () {
         }
 
         if (v > windowTop) {
+            $('.head-nav .nav-item').hide();
             $('.wrap-head').stop().css({
                 top: -72
             })
             windowTop = v;
         } else {
+            $('.head-nav .nav-item').show();
             $('.wrap-head').stop().css({
                 top: 0
             })

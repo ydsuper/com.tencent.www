@@ -1,5 +1,5 @@
 body {
-    height: 4333px;
+    height: 6333px;
 }
 
 .wrap {}
@@ -45,9 +45,15 @@ body {
         .ele-navigation {
             width: 100%;
             height: 54px;
+            background-color: #fbfbfb;
             position: absolute;
             top: 0;
             left: 0;
+
+            &.fixed {
+                position: fixed;
+                z-index: 66;
+            }
         }
 
         .ele-nav-list {
@@ -289,17 +295,577 @@ body {
             line-height: 25px;
             margin-bottom: 18px;
 
-            >.month{
+            >.month {
                 float: left;
                 width: 40px;
                 text-align: right;
                 margin-right: 10px;
             }
 
-            >.info{
+            >.info {
                 width: 320px;
                 float: left;
             }
         }
     }
+}
+
+// 业务架构
+.bsnstr {
+    width: auto;
+    background: #FBFBFB;
+    padding: 80px 0;
+    margin: 20px 20px 0;
+
+    .bsnstr-con {
+        width: 1200px;
+        margin: 0 auto;
+
+        >h3 {
+            font-size: 30px;
+            color: #2a2e2e;
+            font-family: 'TencentSansw7';
+        }
+    }
+
+    .bsnstr-box {
+
+        >.tencent {
+            margin: 50px 0 64px;
+            position: relative;
+
+            >img {
+                width: 183px;
+                margin: 0 auto;
+            }
+
+            &:after {
+                content: ' ';
+                width: 2px;
+                height: 26px;
+                background: #D8D9DC;
+                position: absolute;
+                bottom: -38px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.bsnstr-box {
+    >.bsnstr-list {
+        width: 100%;
+
+        .bsnstr-tab {
+            width: 100%;
+            position: relative;
+
+            &::before {
+                content: ' ';
+                width: 83.86%;
+                top: -26px;
+                height: 2px;
+                background: #D8D9DC;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            >li {
+                float: left;
+                width: 16.25%;
+                height: 134px;
+                box-sizing: border-box;
+                padding: 32px 0px;
+                margin-left: 0.5%;
+                background: #F2F3F5;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .bsnstr-tab {
+        >li {
+            transition: background-color .2s linear;
+
+            &::before {
+                content: "";
+                width: 2px;
+                height: 26px;
+                background: #D8D9DC;
+                position: absolute;
+                top: -26px;
+            }
+        }
+
+        >li.active {
+            background-color: #fff;
+
+            >.san {
+                display: block;
+            }
+        }
+
+        .label {
+            color: #0052D9;
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+        }
+
+        .val {
+            color: #5F6464;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .san {
+            display: none;
+            width: 48px;
+            position: absolute;
+            left: 50%;
+            bottom: -49px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .tab-con {
+        margin-top: 48px;
+        background-color: #fff;
+
+        >li {
+            display: none;
+            color: #5F6464;
+            padding: 32px 42px;
+            font-size: 14px;
+            line-height: 25px;
+            transition: opacity 0.2s linear;
+        }
+
+        >li.active-con {
+            display: block;
+        }
+    }
+}
+
+// 管理团队
+.team {
+    margin: 96px 0;
+
+    .team-con {
+        width: 1200px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 30px;
+            color: #2a2e2e;
+            font-family: 'TencentSansw7';
+        }
+
+        .team-member {
+            width: 100%;
+            margin-top: 48px;
+        }
+    }
+}
+
+.team-member {
+    ul {
+        overflow: hidden;
+    }
+
+    h4 {
+        clear: left;
+        color: #2a2e2e;
+        font-size: 24px;
+        line-height: 43px;
+        padding: 60px 0 35px;
+    }
+
+    li {
+        float: left;
+        width: 25%;
+        height: 260px;
+        padding-left: 32px;
+        box-sizing: border-box;
+        background-color: #FBFBFB;
+        cursor: pointer;
+        position: relative;
+        transition: background-color .2s linear;
+
+        >.mbr {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .block {
+                width: 28px;
+                height: 28px;
+                background-color: #0052d9;
+                position: absolute;
+                left: -14px;
+                bottom: -14px;
+                transition: all .2s linear;
+            }
+        }
+
+        &:hover {
+            background-color: #F2F3F5;
+
+            .block {
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .mess {
+        width: 100%;
+        margin-top: 105px;
+
+        >.name {
+            color: #0052d9;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        >.job-mess {
+            float: left;
+            min-width: 160px;
+
+            p {
+                color: #5f6464;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .t-mess{
+        margin-top: 75px;
+    }
+}
+
+
+// team弹窗
+.wrap-main {
+    .team-pop {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+
+        .pop-bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .pop-box {
+            width: 782px;
+            height: 520px;
+            box-sizing: border-box;
+            padding: 0 80px 50px 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.team-pop {
+    .pop-box {
+        >.close {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            cursor: pointer;
+
+            >img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        >.pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            >img {
+                width: 200px;
+            }
+        }
+    }
+
+    .mes-box {
+        width: 446px;
+        margin-left: 256px;
+
+        .nj-box {
+            height: 200px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #E9ECF0;
+            overflow: hidden;
+        }
+
+        .name {
+            color: #0052D9;
+            font-size: 30px;
+            margin: 48px 0 8px;
+        }
+
+        .job {
+            color: #5F6464;
+            font-size: 14px;
+            line-height: 25px;
+
+            >p {
+                margin-bottom: 4px;
+            }
+        }
+
+        .desc {
+            height: 180px;
+            color: #5F6464;
+            font-size: 14px;
+            line-height: 25px;
+            overflow-y: scroll;
+
+            >p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+// 企业文化
+.epculture {
+    margin: 0 12px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    background: #FBFBFB;
+
+    .epculture-con {
+        width: 1400px;
+        min-height: 610px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .pic {
+        float: right;
+        width: 60.2%;
+        min-height: 610px;
+        padding-left: 1%;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+
+        >img {
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .mess {
+        float: left;
+        width: 39.23%;
+        margin-top: 56px;
+
+        h3 {
+            color: #2a2e2e;
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            color: #0052D9;
+            font-size: 20px;
+            line-height: 36px;
+            margin: 40px 0 8px;
+        }
+
+        li {
+            width: 100%;
+            margin-bottom: 20px;
+
+            >h5 {
+                color: #2A2E2E;
+                font-size: 24px;
+                font-family: 'TencentSansw7';
+                margin-bottom: 6px;
+            }
+
+            >p {
+                color: #2A2E2E;
+                font-size: 16px;
+                line-height: 29px;
+            }
+        }
+    }
+}
+
+// 办公地点
+.ofcaddr {
+    margin: 96px 12px;
+
+    .ofcaddr-con {
+        width: 1200px;
+        margin: 0 auto;
+
+        >h3 {
+            color: #2a2e2e;
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+            text-align: center;
+            padding: 40px 0 30px;
+        }
+    }
+
+    .addr-map {
+        width: 986px;
+        margin: 0 auto;
+        position: relative;
+
+        .bg {
+            width: 986px;
+        }
+
+        .mask {
+            width: 555px;
+            position: absolute;
+            left: 74px;
+            top: 122px;
+        }
+    }
+
+    .addr-tab {
+        margin-top: 15px;
+
+        >p {
+            color: #5f6464;
+            font-size: 14px;
+            line-height: 25px;
+            padding-left: 80px;
+            position: relative;
+        }
+
+        .tab-list {
+            width: 100%;
+            height: 300px;
+            margin-top: 25px;
+            border-top: 2px solid #f2f3f5;
+            position: relative;
+        }
+
+        .mc-left {
+            display: none;
+            width: 143px;
+            height: 47px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .mc-right {
+            width: 143px;
+            height: 47px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .mc-left>img,
+        .mc-right>img {
+            width: 100%;
+        }
+
+        ul {
+            width: 100%;
+            height: 300px;
+            padding-left: 80px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: left 0.4s linear;
+        }
+
+        li {
+            float: left;
+            margin-top: 8px;
+            margin-right: 60px;
+            position: relative;
+
+            >.city {
+                color: #2a2e2e;
+                font-size: 16px;
+                line-height: 29px;
+                position: relative;
+                cursor: pointer;
+            }
+
+            >.p {
+                display: none;
+                width: 300px;
+                color: #5f6464;
+                font-size: 14px;
+                line-height: 25px;
+                position: absolute;
+                left: 0;
+                top: 50px;
+            }
+
+            &.active {
+                >.p {
+                    display: block;
+                }
+
+                .city {
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        background: #0052d9;
+                        position: absolute;
+                        left: 0;
+                        top: -10px;
+                    }
+                }
+            }
+        }
+    }
+
 }

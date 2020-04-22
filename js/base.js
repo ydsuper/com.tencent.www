@@ -18,7 +18,7 @@ $(function () {
             $('.nav-hook').show();
             $('.head-show').stop().animate({
                 opacity: 1,
-                height: 374  // 516 374
+                height: 374 // 516 374
             }, 300)
         },
         function () {
@@ -32,29 +32,31 @@ $(function () {
 
     // 导航列表移入移出
     $('.head-nav .nav-item').hover(function () {
-        $(this).find('.nav-list').show().addClass('list_hover');
+        $(this).find('.nav-list').hide().show().addClass('list_hover');
         $(this).siblings('.nav-item').find('.nav-list').hide().removeClass('list_hover');
-
     }, function () {
         $('.head-nav .nav-item .nav-list').hide().removeClass('list_hover');
     })
 
 
     // 监听滚动事件
-    let windowTop = 0;
-    $(window).scroll(function () {
-        let v = $(this).scrollTop();
-        if (v > windowTop) {
-            $('.wrap-head').stop().css({
-                top: -72
-            })
-            windowTop = v;
-        } else {
-            $('.wrap-head').stop().css({
-                top: 0
-            })
-            windowTop = v;
-        }
-    })
+    // let windowTop = 0;
+    // let showHeadState = true;
+    // $(window).scroll(function () {
+    //     let v = $(this).scrollTop();
+    //     if (v > windowTop) {
+    //         $('.wrap-head').stop().css({
+    //             top: -72
+    //         })
+    //         windowTop = v;
+    //     } else {
+    //         if (showHeadState) {
+    //             $('.wrap-head').stop().css({
+    //                 top: 0
+    //             })
+    //         }
+    //         windowTop = v;
+    //     }
+    // })
 
 })

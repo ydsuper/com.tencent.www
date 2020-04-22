@@ -229,6 +229,7 @@
                     background-size: 100% 100%;
 
                     +img {
+                        display: block;
                         opacity: 1;
                     }
                 }
@@ -266,7 +267,7 @@
         }
 
         .wechat+img {
-            display: block;
+            display: none;
             width: 176px;
             position: absolute;
             left: 0;

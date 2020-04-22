@@ -30,7 +30,7 @@
         <!-- 页头 -->
         <!-- show覆盖 -->
         <div class="head-show"></div>
-        <div class="wrap-head" style="position:fixed;top:0px;z-index:3;background-color: #fff;">
+        <div class="wrap-head" style="position:fixed;top:0px;z-index:88;background-color: #fff;">
             <div class="head-con">
                 <!-- 腾讯logo -->
                 <div class="logo">
@@ -171,28 +171,28 @@
                         <div class="progress">
                             <h3>发展历程</h3>
                             <div class="progress-time clearfix">
-                                <div class="node active">
+                                <div class="node active" data-year="2019">
                                     <span>现在</span>
                                     <div class="core"></div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="node">
+                                <div class="node" data-year="2016">
                                     <span>2016</span>
                                     <div class="core"></div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="node">
+                                <div class="node" data-year="2010">
                                     <span>2010</span>
                                     <div class="core">
                                     </div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="node">
+                                <div class="node" data-year="2004">
                                     <span>2004</span>
                                     <div class="core"></div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="node">
+                                <div class="node" data-year="1998">
                                     <span>1998</span>
                                     <div class="core"></div>
                                 </div>
@@ -201,33 +201,557 @@
                         <div class="history-con">
                             <div class="container">
                                 <ul class="history-main">
-                                    <!-- 模板 -->
-                                    <!-- <li>
-                                        <div class="tit">2019</div>
-                                        <div class="item clearfix">
-                                            <div class="month">11月</div>
-                                            <div class="info">发布全新企业使命与愿景 “用户为本 科技向善”</div>
-                                        </div>
-                                    </li> -->
+
                                 </ul>
                             </div>
                         </div>
                     </div>
-
                     <!-- 业务架构 -->
+                    <div class="bsnstr" id="about-con-4">
+                        <div class="bsnstr-con">
+                            <h3>业务架构</h3>
+                            <div class="bsnstr-box">
+                                <div class="tencent">
+                                    <img src="./images/tencent_logo.png" alt="">
+                                </div>
+                                <div class="bsnstr-list">
+                                    <ul class="bsnstr-tab clearfix">
+                                        <li class="active">
+                                            <p class="label">CDG</p>
+                                            <p class="val">企业发展事业群</p>
+                                            <img class="san" src="./images/about/san.png" alt="img">
+                                        </li>
+                                        <li>
+                                            <p class="label">CSIG</p>
+                                            <p class="val">云与智慧产业事业群</p>
+                                            <img class="san" src="./images/about/san.png" alt="img">
+                                        </li>
+                                        <li>
+                                            <p class="label">IEG</p>
+                                            <p class="val">互动娱乐事业群</p>
+                                            <img class="san" src="./images/about/san.png" alt="img">
+                                        </li>
+                                        <li>
+                                            <p class="label">PCG</p>
+                                            <p class="val">平台与内容事业群</p>
+                                            <img class="san" src="./images/about/san.png" alt="img">
+                                        </li>
+                                        <li>
+                                            <p class="label">TEG</p>
+                                            <p class="val">技术工程事业群</p>
+                                            <img class="san" src="./images/about/san.png" alt="img">
+                                        </li>
+                                        <li>
+                                            <p class="label">WXG</p>
+                                            <p class="val">微信事业群</p>
+                                            <img class="san" src="./images/about/san.png" alt="img">
+                                        </li>
+                                    </ul>
+                                    <ul class="tab-con">
+                                        <li class="active-con">
+                                            为公司新业务孵化和新业态探索的平台，推动包括基础支付、金融应用在内的金融科技业务、广告营销服务和国际业务等领域的发展和创新。同时作为专业支持平台，为公司及各事业群提供战略规划、投资并购、投资者关系及国际传讯、市场公关等专业支持。
+                                        </li>
+                                        <li>
+                                            推进云与产业互联网战略，依托云、安全、人工智能等技术创新，打造智慧产业升级方案。探索用户与产业的创新互动，打通产业上下游不同企业，联动线上线下的场景与资源，助力零售、医疗、教育、交通等产业数字化升级，同时协助企业更智能地服务用户，构建连接用户与商业的智慧产业新生态。
+                                        </li>
+                                        <li>
+                                            发展网络游戏、电竞等互动娱乐业务，打造一个从策划、研发、发行，运营及营销的垂直生态链。致力为中国以及全球游戏用户创造高品质产品，并通过在线游戏，直播和线下电竞赛事联动用户，提升总体游戏体验。
+                                        </li>
+                                        <li>
+                                            推进互联网平台和内容文化生态融合发展，整合QQ、QQ空间等社交平台，和应用宝、浏览器等流量平台，以及新闻资讯、视频、体育、直播、动漫、影业等内容平台，为内容生态创造更好的生长环境。同时，以技术驱动，推动IP
+                                            跨平台多形态发展，为更多用户创造多样化的优质数字内容体验。
+                                        </li>
+                                        <li>
+                                            为公司及各事业群提供技术及运营平台支持、研发管理、数据中心的建设与运营，并为用户提供全线产品的客户服务。作为运营着亚洲最大网络、服务器集群和数据中心的事业群，并牵头腾讯技术委员会，通过内部分布式开源协同，加强基础研发，建设技术中台等措施，支持业务创新。
+                                        </li>
+                                        <li>
+                                            搭建和运营微信生态体系，依托微信基础平台，以及微信公众号、小程序、微信支付、企业微信、微信搜索等开放平台，为各行各业的智慧化升级提供解决方案和连接能力。同时开发和运营包括邮箱、通讯录、微信读书等产品。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 管理团队 -->
+                    <div class="team" id="about-con-5">
+                        <div class="team-con">
+                            <h3>管理团队</h3>
+                            <div class="team-member">
+                                <ul class="clearfix">
+                                    <li class="t-1">
+                                        <div class="mess">
+                                            <div class="name">马化腾</div>
+                                            <div class="job-mess">
+                                                <p>主要创办人</p>
+                                                <p>董事会主席兼首席执行官</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/1.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-2">
+                                        <div class="mess">
+                                            <div class="name">刘炽平</div>
+                                            <div class="job-mess">
+                                                <p>董事会执行董事兼公司总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/2.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-3">
+                                        <div class="mess">
+                                            <div class="name">许晨晔</div>
+                                            <div class="job-mess">
+                                                <p>主要创办人</p>
+                                                <p>首席信息官</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/3.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-4">
+                                        <div class="mess">
+                                            <div class="name">任宇昕</div>
+                                            <div class="job-mess">
+                                                <p>首席运营官</p>
+                                                <p>互动娱乐事业群总裁</p>
+                                                <p>平台与内容事业群总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/4.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-5">
+                                        <div class="mess">
+                                            <div class="name">张小龙</div>
+                                            <div class="job-mess">
+                                                <p>集团高级执行副总裁</p>
+                                                <p>微信事业群总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/5.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-6">
+                                        <div class="mess t-mess">
+                                            <div class="name">James<br>Mitchell</div>
+                                            <div class="job-mess">
+                                                <p>首席战略官</p>
+                                                <p>集团高级执行副总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/6.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-7">
+                                        <div class="mess">
+                                            <div class="name">汤道生</div>
+                                            <div class="job-mess">
+                                                <p>集团高级执行副总裁</p>
+                                                <p>云与智慧产业事业群总裁</p>
+                                                <p>腾讯音乐娱乐集团董事长</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/7.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-8">
+                                        <div class="mess">
+                                            <div class="name">卢山</div>
+                                            <div class="job-mess">
+                                                <p>集团高级执行副总裁</p>
+                                                <p>技术工程事业群总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/8.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-9">
+                                        <div class="mess">
+                                            <div class="name">刘胜义</div>
+                                            <div class="job-mess">
+                                                <p>集团高级执行副总裁</p>
+                                                <p>集团市场与全球品牌主席</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/9.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-10">
+                                        <div class="mess">
+                                            <div class="name">网大为</div>
+                                            <div class="job-mess">
+                                                <p>首席探索官</p>
+                                                <p>集团高级执行副总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/10.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-11">
+                                        <div class="mess">
+                                            <div class="name">马晓轶</div>
+                                            <div class="job-mess">
+                                                <p>集团高级副总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/11.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-12">
+                                        <div class="mess">
+                                            <div class="name">罗硕瀚</div>
+                                            <div class="job-mess">
+                                                <p>首席财务官</p>
+                                                <p>集团高级副总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/12.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-13">
+                                        <div class="mess">
+                                            <div class="name">郭凯天</div>
+                                            <div class="job-mess">
+                                                <p>集团高级副总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/13.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-14">
+                                        <div class="mess">
+                                            <div class="name">奚丹</div>
+                                            <div class="job-mess">
+                                                <p>集团高级副总裁</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/14.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-15">
+                                        <div class="mess">
+                                            <div class="name">杨国安</div>
+                                            <div class="job-mess">
+                                                <p>高级管理顾问</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/15.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+
+                                    <h4>终身荣誉顾问</h4>
+                                    <li class="t-16">
+                                        <div class="mess">
+                                            <div class="name">张志东</div>
+                                            <div class="job-mess">
+                                                <p>主要创办人</p>
+                                                <p>终身荣誉顾问</p>
+                                                <p>腾讯学院荣誉院长</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/16.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-17">
+                                        <div class="mess">
+                                            <div class="name">陈一丹</div>
+                                            <div class="job-mess">
+                                                <p>主要创办人</p>
+                                                <p>终身荣誉顾问</p>
+                                                <p>腾讯公益慈善基金会发起人兼荣誉理事长</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/17.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                    <li class="t-18">
+                                        <div class="mess">
+                                            <div class="name">曾李青</div>
+                                            <div class="job-mess">
+                                                <p>主要创办人</p>
+                                                <p>终身荣誉顾问</p>
+                                            </div>
+                                        </div>
+                                        <div class="mbr">
+                                            <img src="./images/about/18.jpg" alt="img">
+                                            <i class="block"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
                     <!-- 企业文化 -->
+                    <div class="epculture" id="about-con-6">
+                        <div class="epculture-con">
+                            <div class="pic">
+                                <img class="pc-box" src="./images/about/pic.jpg" alt="">
+                            </div>
+                            <div class="mess">
+                                <h3>企业文化</h3>
+                                <h4>价值观</h4>
+                                <ul>
+                                    <li>
+                                        <h5>正直</h5>
+                                        <p>坚守底线，以德为先，坦诚公正不唯上</p>
+                                    </li>
+                                    <li>
+                                        <h5>进取</h5>
+                                        <p>无功便是过，勇于突破有担当</p>
+                                    </li>
+                                    <li>
+                                        <h5>协作</h5>
+                                        <p>开放协同，持续进化</p>
+                                    </li>
+                                    <li>
+                                        <h5>创造</h5>
+                                        <p>超越创新，探索未来</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 办公地点 -->
+                    <div class="ofcaddr" id="about-con-7">
+                        <div class="ofcaddr-con">
+                            <h3>办公地点</h3>
+                            <div class="addr-map">
+                                <img class="bg" src="./images/about/address-pic.png" alt="img">
+                                <img class="mask" src="./images/about/address-dian.png" alt="img">
+                            </div>
+                            <div class="addr-tab">
+                                <p>下列城市</p>
+                                <div class="tab-list">
+                                    <div class="mc-left"><img src="./images/about/mc-left.png" alt=""></div>
+                                    <div class="mc-right"><img src="./images/about/mc-right.png" alt=""></div>
+                                    <ul>
+                                        <li>
+                                            <div class="city">阿姆斯特丹</div>
+                                            <div class="p">
+                                                <p>26th Floor, Mondriaan Tower, Amstelplein 54, Amsterdam, Netherlands
+                                                </p>
+                                                <p>邮编：1096 BC</p>
+                                                <p>电话：N/A</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">曼谷</div>
+                                            <div class="p">
+                                                <p>8 T One Building, 10th,11th and 12th Floor (Unit 4-5), Soi Sukhumvit
+                                                    40, Sukhumvit Road, Phra Khanong, Khlong Toei, Bangkok
+                                                </p>
+                                                <p>电话：+66-2-833-3000</p>
+                                                <p>网址：https://www.tencent.co.th/th/</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">吉隆坡</div>
+                                            <div class="p">
+                                                <p>Suite 02 &amp; 03, Level 17, Centrepoint South Tower, Mid Valley
+                                                    City,
+                                                    Lingkaran Syed Putra, 59200 Kuala Lumpur, Malaysia</p>
+                                                <p>邮编：59200</p>
+                                                <p>电话：+60-3-22872388</p>
+                                            </div>
+                                        </li>
+                                        <li class="active">
+                                            <div class="city">深圳</div>
+                                            <div class="p">
+                                                <p>深圳总部</p>
+                                                <p>深圳市南山区海天二路33号腾讯滨海大厦</p>
+                                                <p>邮编：518054</p>
+                                                <p>总机电话：+86-755-86013388</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">香港</div>
+                                            <div class="p">
+                                                <p>湾仔</p>
+                                                <p>皇后大道东1号太古广场三期29楼</p>
+                                                <p>电话：+852-31485100</p>
+                                                <p style="margin-top: 10px;">尖沙咀</p>
+                                                <p>海港城环球金融中心南塔10楼</p>
+                                                <p>电话：+852-31485100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">台北</div>
+                                            <div class="p">
+                                                <p>台北市信义区忠孝东路5段68号21楼A1室</p>
+                                                <p>邮编：110</p>
+                                                <p>电话：+852-31485100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">首尔</div>
+                                            <div class="p">
+                                                <p>40F Gangnam Finance Center, 152, Teheran-ro, Gangnam-gu, Seoul,
+                                                    Korea</p>
+                                                <p>邮编：06236</p>
+                                                <p>网址：http://tencent.co.kr/</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">东京</div>
+                                            <div class="p">
+                                                <p>29F Toranomon Hills Mori Tower，1-23-1 Toranomon, Minato-ku ,Tokyo</p>
+                                                <p>邮编：105-6390</p>
+                                                <p>网址：http://tencentjapan.com/</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="city">帕罗奥多</div>
+                                            <div class="p">
+                                                <p>2747 Park Boulevard, Palo Alto, CA 94306, United States of America
+                                                </p>
+                                                <p>邮编：94306</p>
+                                                <p>电话：+1-650-798-3300</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- team弹窗 -->
+            <div class="team-pop">
+                <div class="pop-bg"></div>
+                <div class="pop-box">
+                    <div class="close"><img src="./images/about/close.png" alt="img"></div>
+                    <div class="pic"><img src="./images/about/1.jpg" alt="img"></div>
+                    <div class="mes-box">
+                        <div class="nj-box">
+                            <div class="name">马化腾</div>
+                            <div class="job">
+                                <p>主要创办人</p>
+                                <p>董事会主席兼首席执行官</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>腾讯主要创办人之一，董事会主席兼首席执行官，全面负责公司战略规划、定位和管理。在1998年创立腾讯前，马化腾曾在深圳润迅通讯发展有限公司工作，主管互联网传呼系统的研究开发。
+                            </p>
+                            <p>马化腾毕业于深圳大学计算机及应用专业，获理学士学位。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- 页脚 -->
+        <div class="wrap-footer">
+            <div class="footer-con">
+                <div class="follow_us">
+                    <p>关注我们</p>
+                    <ul class="ways clearfix">
+                        <li>
+                            <a href="##">
+                                <i class="icon wechat"></i>
+                                <img src="./images/wechat-code.jpg" alt="">
+                            </a>
+                        </li>
 
+                        <li>
+                            <a target="_blank" href="https://weibo.com/tencent">
+                                <i class="icon weibo"></i>
+                            </a>
+                        </li>
 
+                        <li>
+                            <a target="_blank" href="https://twitter.com/TencentGlobal">
+                                <i class="icon twitter"></i>
+                            </a>
+                        </li>
 
-
-
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/tencent/">
+                                <i class="icon in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join_us">
+                    <h3>加入我们</h3>
+                    <ul>
+                        <li><a target="_blank" href="#">社会招聘</a></li>
+                        <li><a target="_blank" href="#">校园招聘</a></li>
+                        <li><a target="_blank" href="#">国际招聘</a></li>
+                    </ul>
+                </div>
+                <div class="contact_us">
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li><a target="_blank" href="#">客户服务</a></li>
+                        <li><a target="_blank" href="#">合作洽谈</a></li>
+                        <li><a target="_blank" href="#">腾讯采购</a></li>
+                        <li><a target="_blank" href="#">媒体及投资者</a></li>
+                    </ul>
+                </div>
+                <div class="legal_info">
+                    <h3>法律信息</h3>
+                    <ul>
+                        <li><a target="_blank" href="#">服务协议</a></li>
+                        <li><a target="_blank" href="#">隐私政策</a></li>
+                        <li><a target="_blank" href="#">知识产权</a></li>
+                    </ul>
+                </div>
+                <div class="logo_tencent">
+                    <img src="./images/tencent_logo.png" alt="Tencent腾讯">
+                </div>
+                <div class="footer-bottom clearfix">
+                    <ul class="links clearfix">
+                        <li><a target="_blank" href="#">法律声明</a></li>
+                        <li><a target="_blank" href="#">阳光准则</a></li>
+                        <li><a target="_blank" href="#">网站地图</a></li>
+                        <li><a href="#">粤网文【2017】6138-1456号</a></li>
+                        <li><a href="#">粤B2-20090059-1</a></li>
+                    </ul>
+                    <div class="copyright">
+                        Copyright © 1998 - 2020 Tencent. All Rights Reserved. <br class="cr_br"> 腾讯公司 版权所有
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
