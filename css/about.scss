@@ -1,7 +1,3 @@
-body {
-    height: 6333px;
-}
-
 .wrap {}
 
 // 主体
@@ -96,7 +92,8 @@ body {
 
     .compfe {
         width: 1200px;
-        margin: 96px auto 0;
+        padding-top: 96px;
+        margin: 0 auto;
 
         .compfe-con {
             text-align: center;
@@ -456,7 +453,7 @@ body {
 
 // 管理团队
 .team {
-    margin: 96px 0;
+    padding: 96px 0;
 
     .team-con {
         width: 1200px;
@@ -553,7 +550,7 @@ body {
         }
     }
 
-    .t-mess{
+    .t-mess {
         margin-top: 75px;
     }
 }
@@ -734,7 +731,7 @@ body {
 
 // 办公地点
 .ofcaddr {
-    margin: 96px 12px;
+    padding: 96px 12px;
 
     .ofcaddr-con {
         width: 1200px;

@@ -1,0 +1,89 @@
+body {
+  height: 6333px;
+}
+
+.wrap-main {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.wrap-main .main-con {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.main-top {
+  width: 100%;
+  height: 482px;
+  background: url(../images/business/business-1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main-top .main-top-con {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 202px;
+}
+
+.main-top .main-top-con > h2 {
+  color: #2A2E2E;
+  font-size: 44px;
+  font-family: 'TencentSansw3';
+  margin-bottom: 8px;
+}
+
+.main-top .main-top-con > p {
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 27px;
+}
+
+.biz-nav {
+  width: 100%;
+  height: 69px;
+  position: relative;
+}
+
+.biz-nav .biz-nav-roll {
+  width: 100%;
+  height: 69px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.biz-nav .biz-nav-fixed {
+  position: fixed;
+  z-index: 66;
+}
+
+.biz-nav .biz-con {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.biz-nav .biz-list {
+  width: 100%;
+  height: 68px;
+  padding-left: 16px;
+}
+
+.biz-nav .biz-list > li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.biz-nav .biz-list a {
+  display: block;
+  color: #5F6464;
+  font-size: 20px;
+  line-height: 68px;
+}
+
+.biz-nav .biz-list a.active {
+  color: #2a2e2e;
+}
+/*# sourceMappingURL=business_to-b.css.map */

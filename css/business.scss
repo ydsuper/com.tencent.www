@@ -1,0 +1,335 @@
+.wrap {}
+
+// 主体
+.wrap-main {
+    width: 100%;
+    margin-top: 72px;
+
+    .main-con {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+// 连接生态
+.main-top {
+    width: 100%;
+    height: 482px;
+    background: url(../images/business/business-1.jpg) no-repeat;
+    background-size: cover;
+
+    .main-top-con {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 202px;
+
+        >h2 {
+            color: #2A2E2E;
+            font-size: 44px;
+            font-family: 'TencentSansw3';
+            margin-bottom: 8px;
+        }
+
+        >p {
+            color: #2A2E2E;
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 27px;
+        }
+    }
+}
+
+// business导航
+.biz-nav {
+    width: 100%;
+    height: 69px;
+    position: relative;
+
+    .biz-nav-roll {
+        width: 100%;
+        height: 69px;
+        background-color: #fff;
+        border-bottom: 1px solid #f4f4f4;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .biz-nav-fixed {
+        position: fixed;
+        z-index: 66;
+    }
+
+    .biz-con {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .biz-list {
+        width: 100%;
+        height: 68px;
+        padding-left: 16px;
+
+        >li {
+            display: inline-block;
+            margin-right: 56px;
+        }
+
+        a {
+            display: block;
+            color: #5F6464;
+            font-size: 20px;
+            line-height: 68px;
+
+            &.active {
+                color: #2a2e2e;
+            }
+        }
+    }
+}
+
+// app 介绍
+.appintro {
+    >.div {
+        width: 100%;
+    }
+
+    .left-box {
+        float: left;
+        width: 344px;
+        padding-right: 64px;
+
+        h3 {
+            color: #2a2e2e;
+            font-size: 24px;
+            font-family: 'TencentSansw7';
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: #5f6464;
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+
+    .right-box {
+        // margin-top: 45px;
+        overflow: hidden;
+    }
+
+    .con {
+        padding-left: 100px;
+        padding-right: 12px;
+        width: 1400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        &.white-bg {
+            padding-top: 96px;
+            padding-bottom: 96px;
+
+            .item:hover {
+                background-color: #fbfbfb;
+            }
+        }
+
+        &.gray-bg {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .item:hover {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .app-list {
+        overflow: hidden;
+
+        >li {
+            float: left;
+            width: 25%;
+            height: 224px;
+            text-align: center;
+            padding-top: 26px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: background-color .2s linear;
+        }
+
+        .logo-pic {
+            width: 96px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .mess {
+            width: 100%;
+            margin-top: 8px;
+
+            >.name {
+                color: #2a2e2e;
+                font-size: 20px;
+                line-height: 36px;
+            }
+
+            >.desc {
+                color: #5f6464;
+                font-size: 14px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+    }
+
+    .comm {
+        background-color: #fff;
+    }
+
+    .comm-con {
+        .left-box {
+            margin-top: 44px;
+        }
+    }
+
+    .figure {
+        background-color: #fbfbfb;
+    }
+
+    .figure-con {
+        .left-box {
+            margin-top: 165px;
+        }
+    }
+
+    .fin {
+        background-color: #fff;
+    }
+
+    .fin-con {
+        .left-box {
+            margin-top: 220px;
+        }
+    }
+
+    .tool {
+        background-color: #fbfbfb;
+    }
+
+    .tool-con {
+        .left-box {
+            margin-top: 156px;
+        }
+    }
+
+}
+
+// app弹窗
+.app-pop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .pop-bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .pop-box {
+        width: 1044px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.10);
+        padding: 65px 80px 50px 64px;
+    }
+
+    .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        cursor: pointer;
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    .logo-pic {
+        float: left;
+        width: 160px;
+        margin-right: 32px;
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    .mes-box {
+        overflow: hidden;
+
+        .nlg-box {
+            width: 100%;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #E9ECF0;
+        }
+
+        .name {
+            color: #2A2E2E;
+            font-size: 30px;
+            margin-bottom: 9px;
+        }
+
+        .lgo {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .label {
+            float: left;
+            color: #949696;
+            font-size: 20px;
+            line-height: 36px;
+        }
+
+        .go {
+            float: right;
+            color: #0A43C8;
+            font-size: 16px;
+            letter-spacing: -0.01px;
+            line-height: 36px;
+        }
+
+        .desc {
+            width: 100%;
+            height: auto;
+
+            >p {
+                color: #5F6464;
+                font-size: 14px;
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}

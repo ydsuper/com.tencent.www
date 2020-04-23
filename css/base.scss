@@ -267,7 +267,7 @@
         }
 
         .wechat+img {
-            display: none;
+            display: block;
             width: 176px;
             position: absolute;
             left: 0;
@@ -275,6 +275,7 @@
             z-index: 2;
             opacity: 0;
             transition: opacity 0.2s linear;
+            pointer-events: none; // 无法触碰
         }
 
         .weibo {

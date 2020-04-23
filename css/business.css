@@ -1,0 +1,322 @@
+.wrap-main {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.wrap-main .main-con {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.main-top {
+  width: 100%;
+  height: 482px;
+  background: url(../images/business/business-1.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main-top .main-top-con {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 202px;
+}
+
+.main-top .main-top-con > h2 {
+  color: #2A2E2E;
+  font-size: 44px;
+  font-family: 'TencentSansw3';
+  margin-bottom: 8px;
+}
+
+.main-top .main-top-con > p {
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 27px;
+}
+
+.biz-nav {
+  width: 100%;
+  height: 69px;
+  position: relative;
+}
+
+.biz-nav .biz-nav-roll {
+  width: 100%;
+  height: 69px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.biz-nav .biz-nav-fixed {
+  position: fixed;
+  z-index: 66;
+}
+
+.biz-nav .biz-con {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.biz-nav .biz-list {
+  width: 100%;
+  height: 68px;
+  padding-left: 16px;
+}
+
+.biz-nav .biz-list > li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.biz-nav .biz-list a {
+  display: block;
+  color: #5F6464;
+  font-size: 20px;
+  line-height: 68px;
+}
+
+.biz-nav .biz-list a.active {
+  color: #2a2e2e;
+}
+
+.appintro > .div {
+  width: 100%;
+}
+
+.appintro .left-box {
+  float: left;
+  width: 344px;
+  padding-right: 64px;
+}
+
+.appintro .left-box h3 {
+  color: #2a2e2e;
+  font-size: 24px;
+  font-family: 'TencentSansw7';
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.appintro .left-box p {
+  color: #5f6464;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.appintro .right-box {
+  overflow: hidden;
+}
+
+.appintro .con {
+  padding-left: 100px;
+  padding-right: 12px;
+  width: 1400px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.appintro .con.white-bg {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.appintro .con.white-bg .item:hover {
+  background-color: #fbfbfb;
+}
+
+.appintro .con.gray-bg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.appintro .con.gray-bg .item:hover {
+  background-color: #fff;
+}
+
+.appintro .app-list {
+  overflow: hidden;
+}
+
+.appintro .app-list > li {
+  float: left;
+  width: 25%;
+  height: 224px;
+  text-align: center;
+  padding-top: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.appintro .app-list .logo-pic {
+  width: 96px;
+  margin: 0 auto;
+}
+
+.appintro .app-list .logo-pic img {
+  width: 100%;
+}
+
+.appintro .app-list .mess {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.appintro .app-list .mess > .name {
+  color: #2a2e2e;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.appintro .app-list .mess > .desc {
+  color: #5f6464;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.appintro .comm {
+  background-color: #fff;
+}
+
+.appintro .comm-con .left-box {
+  margin-top: 44px;
+}
+
+.appintro .figure {
+  background-color: #fbfbfb;
+}
+
+.appintro .figure-con .left-box {
+  margin-top: 165px;
+}
+
+.appintro .fin {
+  background-color: #fff;
+}
+
+.appintro .fin-con .left-box {
+  margin-top: 220px;
+}
+
+.appintro .tool {
+  background-color: #fbfbfb;
+}
+
+.appintro .tool-con .left-box {
+  margin-top: 156px;
+}
+
+.app-pop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.app-pop .pop-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app-pop .pop-box {
+  width: 1044px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+  padding: 65px 80px 50px 64px;
+}
+
+.app-pop .close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  cursor: pointer;
+}
+
+.app-pop .close > img {
+  width: 100%;
+}
+
+.app-pop .logo-pic {
+  float: left;
+  width: 160px;
+  margin-right: 32px;
+}
+
+.app-pop .logo-pic > img {
+  width: 100%;
+}
+
+.app-pop .mes-box {
+  overflow: hidden;
+}
+
+.app-pop .mes-box .nlg-box {
+  width: 100%;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #E9ECF0;
+}
+
+.app-pop .mes-box .name {
+  color: #2A2E2E;
+  font-size: 30px;
+  margin-bottom: 9px;
+}
+
+.app-pop .mes-box .lgo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-pop .mes-box .label {
+  float: left;
+  color: #949696;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.app-pop .mes-box .go {
+  float: right;
+  color: #0A43C8;
+  font-size: 16px;
+  letter-spacing: -0.01px;
+  line-height: 36px;
+}
+
+.app-pop .mes-box .desc {
+  width: 100%;
+  height: auto;
+}
+
+.app-pop .mes-box .desc > p {
+  color: #5F6464;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=business.css.map */

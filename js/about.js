@@ -183,13 +183,8 @@ $(function () {
     let navTop = $('.ele-navigation').offset().top;
     let navTopArr = []; // navTop数据
     $('[id^="about-con"]').each(function (i) {
-        if (i == 0 || i == 4 || i == 6) {
-            navTopArr.push(parseInt($(this).offset().top - 96));
-        } else {
-            navTopArr.push(parseInt($(this).offset().top));
-        }
+        navTopArr.push(parseInt($(this).offset().top));
     })
-    console.log(navTopArr);
     // 滚动事件
     $(window).scroll(function () {
         let v = $(this).scrollTop();

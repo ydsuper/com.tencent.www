@@ -41,7 +41,7 @@ $(function () {
 
     // 监听滚动事件
     // let windowTop = 0;
-    // let showHeadState = true;
+    // var showHeadState = true;
     // $(window).scroll(function () {
     //     let v = $(this).scrollTop();
     //     if (v > windowTop) {

@@ -272,7 +272,7 @@
 }
 
 .follow_us li .wechat + img {
-  display: none;
+  display: block;
   width: 176px;
   position: absolute;
   left: 0;
@@ -281,6 +281,7 @@
   opacity: 0;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
+  pointer-events: none;
 }
 
 .follow_us li .weibo {
