@@ -100,6 +100,8 @@
   opacity: 0.95;
   -webkit-transition: color .3s linear;
   transition: color .3s linear;
+  position: relative;
+  z-index: 2;
 }
 
 .head-nav .nav-item > .title:after {

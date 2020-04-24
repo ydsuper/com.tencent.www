@@ -107,10 +107,16 @@
   width: 100%;
 }
 
-.brand-item .logo-pic {
+.brand-item .label {
   float: left;
   min-width: 240px;
   margin-right: 20px;
+}
+
+.brand-item .label > h3 {
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
 }
 
 .brand-item .mess {
@@ -145,116 +151,45 @@
   width: 100%;
 }
 
-.brand-item-ad .logo-pic > img {
-  width: 200px;
-}
-
-.brand-item-cloud .logo-pic > img {
-  width: 181px;
-}
-
-.brand-item-wdid .logo-pic > h3 {
-  color: #2a2e2e;
-  font-size: 30px;
-  font-family: 'TencentSansw7';
-}
-
-.brand-item-wdid .con-bottom {
+.brand-item-ft .con-bottom {
   margin-top: 45px;
 }
 
-.brand-item-wdid .pic-box {
-  width: 100%;
-  height: 420px;
-  overflow: hidden;
-}
-
-.brand-item-wdid .pic-box li {
-  width: 100%;
-  display: none;
-}
-
-.brand-item-wdid .pic-box li.active-p {
-  display: block;
-}
-
-.brand-item-wdid .pic-box li > img {
-  width: 100%;
-}
-
-.brand-item-wdid .tab-box {
-  width: 100%;
-}
-
-.brand-item-wdid .tab-box li {
+.brand-item-ft .list li {
   float: left;
-  width: 25%;
-  min-height: 240px;
+  width: 50%;
+  position: relative;
+}
+
+.brand-item-ft .list li img {
+  width: 100%;
+}
+
+.brand-item-ft .list .mess {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 32px 40px 20px 40px;
-  background-color: #f2f3f5;
-  cursor: pointer;
 }
 
-.brand-item-wdid .tab-box li h4 {
-  color: #2a2e2e;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
+.brand-item-ft .list .mess > h4 {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'TencentSansw7';
   margin-bottom: 8px;
 }
 
-.brand-item-wdid .tab-box li p {
-  color: #5f6464;
+.brand-item-ft .list .desc {
+  display: none;
+  height: 25px;
+  color: #ffffff;
   font-size: 14px;
   line-height: 25px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-
-.brand-item-wdid .tab-box li.active-t {
-  background-color: #fbfbfb;
-  border-bottom: 4px solid #0052d9;
-}
-
-.brand-item-wdid .wdidtool {
-  margin-top: 45px;
-}
-
-.brand-item-wdid .wdidtool > h3 {
-  width: 100%;
-  color: #2a2e2e;
-  font-size: 24px;
-  font-family: 'TencentSansw7';
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.brand-item-wdid .wdidtool .item {
-  float: left;
-  width: 49%;
-  height: 280px;
-  padding: 53px 48px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #fbfbfb;
-}
-
-.brand-item-wdid .wdidtool .item.item-xcx {
-  float: right;
-}
-
-.brand-item-wdid .wdidtool .lg-pic {
-  width: 100%;
-  margin-bottom: 16px;
-}
-
-.brand-item-wdid .wdidtool .lg-pic > img {
-  height: 32px;
-}
-
-.brand-item-wdid .wdidtool .desc {
-  color: #5f6464;
-  font-size: 14px;
-  line-height: 25px;
-}
-/*# sourceMappingURL=business_to-b.css.map */
+/*# sourceMappingURL=business_innovation.css.map */

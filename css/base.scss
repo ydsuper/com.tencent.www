@@ -103,6 +103,8 @@
             color: #fff;
             opacity: 0.95;
             transition: color .3s linear;
+            position: relative;
+            z-index: 2;
 
             &:after {
                 content: "";

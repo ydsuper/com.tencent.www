@@ -1,0 +1,102 @@
+body {
+    height: 6333px;
+}
+
+.wrap {}
+
+// 主体
+.wrap-main {
+    width: 100%;
+    margin-top: 72px;
+
+    .main-con {
+        width: 100%;
+    }
+}
+
+// 连接责任与信任
+.main-top {
+    width: 100%;
+    height: 482px;
+    background: url(../images/responsibility/responsibility-1.jpg) no-repeat;
+    background-size: cover;
+
+    .main-top-con {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 202px;
+
+        >h2 {
+            color: #fff;
+            font-size: 44px;
+            font-family: 'TencentSansw3';
+            margin-bottom: 8px;
+        }
+
+        >p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 27px;
+        }
+    }
+}
+
+// 全球战役 践行承诺
+.brand-item {
+    width: 100%;
+
+    &.white-bg {
+        padding: 96px 0;
+        background-color: #fff;
+    }
+
+    &.gray-bg {
+        padding: 96px 0;
+        background-color: #fbfbfb;
+    }
+
+    .brand-con {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .together-box {
+        width: 100%;
+        position: relative;
+
+        .tg-bg {
+            width: 100%;
+        }
+
+        .mess {
+            position: absolute;
+            left: 80px;
+            top: 26%;
+        }
+
+        h2 {
+            color: #2A2E2E;
+            font-size: 30px;
+            font-family: 'TencentSansW7';
+            margin-bottom: 8px;
+        }
+
+        .desc {
+            color: #2A2E2E;
+            font-size: 16px;
+            line-height: 29px;
+        }
+
+        .go-icon {
+            display: block;
+            width: 40px;
+            margin-top: 24px;
+
+            >img {
+                width: 100%;
+            }
+        }
+    }
+
+}
