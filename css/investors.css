@@ -1,0 +1,266 @@
+body {
+  height: 6333px;
+}
+
+.wrap-main {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.wrap-main .main-con {
+  width: 100%;
+}
+
+.main-top {
+  width: 100%;
+  height: 482px;
+  background: url(../images/investors/investor-1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main-top .main-top-con {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 202px;
+}
+
+.main-top .main-top-con > h2 {
+  color: #2A2E2E;
+  font-size: 44px;
+  font-family: 'TencentSansw3';
+  margin-bottom: 8px;
+}
+
+.main-top .main-top-con > p {
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  margin-bottom: 27px;
+}
+
+.mod-elevator {
+  width: 100%;
+  height: 54px;
+  position: relative;
+  background-color: #fbfbfb;
+}
+
+.mod-elevator .ele-navigation {
+  width: 100%;
+  height: 54px;
+  background-color: #fbfbfb;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mod-elevator .ele-navigation.fixed {
+  position: fixed;
+  z-index: 66;
+}
+
+.mod-elevator .ele-nav-list {
+  width: 1200px;
+  height: 53px;
+  margin: 0 auto;
+  position: relative;
+  left: 16px;
+}
+
+.mod-elevator .ele-nav-list > li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.mod-elevator .ele-nav-list > li > a {
+  height: 53px;
+  line-height: 53px;
+  font-size: 16px;
+}
+
+.mod-elevator .ele-nav-list .underline {
+  width: 64px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #0052d9;
+}
+
+.mod-ele-content {
+  width: 100%;
+}
+
+.mod-ele-content .brand-item {
+  width: 100%;
+}
+
+.mod-ele-content .brand-item.white-bg {
+  padding: 96px 0;
+  background-color: #fff;
+}
+
+.mod-ele-content .brand-item.gray-bg {
+  padding: 96px 0;
+  background-color: #fbfbfb;
+}
+
+.mod-ele-content .brand-con {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-item-fnews .title > h3 {
+  float: left;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.brand-item-fnews .title > .lookall {
+  float: right;
+  color: #5F6464;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.brand-item-fnews .title > .lookall > i {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: url(../images/investors/more-awart.png) no-repeat center;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+
+.brand-item-fnews .news-box {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.brand-item-fnews .news-box .new-item {
+  width: 49%;
+  background: #fff;
+  border: 1px solid #efefef;
+  padding: 32px 45px 41px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.brand-item-fnews .news-box .new-item.l-box {
+  float: left;
+}
+
+.brand-item-fnews .news-box .new-item.r-box {
+  float: right;
+}
+
+.brand-item-fnews .new-item h4 {
+  color: #5f6464;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  padding-left: 32px;
+}
+
+.brand-item-fnews .new-item .new-list {
+  margin-top: 40px;
+}
+
+.brand-item-fnews .new-item li {
+  width: 100%;
+  min-height: 91px;
+  margin-bottom: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.brand-item-fnews .new-item li:last-child {
+  margin-bottom: 0;
+}
+
+.brand-item-fnews .new-item li .mess {
+  width: 82%;
+  padding-left: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.brand-item-fnews .new-item li .tit {
+  width: 100%;
+  color: #2A2E2E;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.01px;
+  line-height: 30px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.brand-item-fnews .new-item li .abstract {
+  width: 100%;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.brand-item-fnews .new-item li .abstract-link {
+  display: block;
+  color: #0052d9;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.brand-item-fnews .new-item li .abstract-link > span {
+  float: left;
+}
+
+.brand-item-fnews .new-item li .blue-awart {
+  float: left;
+  width: 20px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.brand-item-fnews .new-item li .data {
+  width: 100%;
+  color: #919797;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.brand-item-fnews .new-item li .line {
+  display: none;
+  width: 6px;
+  height: 100%;
+  background: #0052D9;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+.brand-item-fnews .new-item li .down-icon {
+  display: none;
+  width: 36px;
+  height: 36px;
+  background: url(../images/investors/down-icon.png) no-repeat center;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.brand-item-fnews .new-item li:hover .line {
+  display: block;
+}
+
+.brand-item-fnews .new-item li:hover .down-icon {
+  display: block;
+}
+/*# sourceMappingURL=investors.css.map */

@@ -1,7 +1,3 @@
-body {
-  height: 6333px;
-}
-
 .wrap-main {
   width: 100%;
   margin-top: 72px;
@@ -59,6 +55,7 @@ body {
 
 .brand-item .together-box {
   width: 100%;
+  margin-bottom: 96px;
   position: relative;
 }
 
@@ -93,5 +90,205 @@ body {
 
 .brand-item .together-box .go-icon > img {
   width: 100%;
+}
+
+.brand-item .promess-box {
+  width: 100%;
+}
+
+.brand-item .promess-box h3 {
+  width: 100%;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  text-align: center;
+  overflow: hidden;
+}
+
+.brand-item .promess-box .con-bottom {
+  width: 100%;
+}
+
+.promess-box .con-bottom,
+.brand-item-inno .con-bottom {
+  margin-top: 45px;
+}
+
+.promess-box .list li,
+.brand-item-inno .list li {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.promess-box .list li img,
+.brand-item-inno .list li img {
+  width: 100%;
+}
+
+.promess-box .list .mess,
+.brand-item-inno .list .mess {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.promess-box .list .mess > h4,
+.brand-item-inno .list .mess > h4 {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'TencentSansw7';
+  margin-bottom: 8px;
+}
+
+.promess-box .list .desc,
+.brand-item-inno .list .desc {
+  display: none;
+  height: 25px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 25px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.brand-item-love h3 {
+  width: 100%;
+  color: #2a2e2e;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  margin-bottom: 44px;
+  overflow: hidden;
+}
+
+.brand-item-love .love-box .lb-l {
+  float: left;
+  width: 49%;
+}
+
+.brand-item-love .love-box .lb-r {
+  float: right;
+  width: 49%;
+}
+
+.brand-item-love .love-box .pic {
+  width: 100%;
+}
+
+.brand-item-love .love-box h4 {
+  color: #2A2E2E;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'TencentSansw7';
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.brand-item-love .love-box .desc {
+  color: #5F6464;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.brand-item-love .love-box-1 {
+  margin-bottom: 44px;
+}
+
+.brand-item-love .love-box-2 .lb-l {
+  float: left;
+  width: 32.333%;
+}
+
+.brand-item-love .love-box-2 .lb-m {
+  float: left;
+  width: 32.333%;
+  margin: 0 1.5%;
+}
+
+.brand-item-love .love-box-2 .lb-r {
+  float: right;
+  width: 32.333%;
+}
+
+.brand-item-love .love-box-2 h4 {
+  color: #2A2E2E;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Microsoft YaHei';
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+
+.brand-item-inno h3 {
+  width: 100%;
+  color: #2a2e2e;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+
+.brand-item-inno .list > li:hover .desc {
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+.brand-item-inno .con-bottom .desc {
+  display: block;
+  margin-bottom: -30px;
+}
+
+.link-box {
+  width: 100%;
+  margin-top: 96px;
+  position: relative;
+}
+
+.link-box .bg {
+  width: 100%;
+}
+
+.link-box .mess {
+  position: absolute;
+  left: 78px;
+  top: 132px;
+}
+
+.link-box h2 {
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.link-box .desc {
+  color: #2a2e2e;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 4px 0 16px;
+}
+
+.link-box .go-link span {
+  float: left;
+  color: #0052d9;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-right: 9px;
+}
+
+.link-box .go-link .go-icon {
+  float: left;
+  margin-top: 10px;
+}
+
+.link-box .go-link .go-icon > img {
+  width: 19px;
 }
 /*# sourceMappingURL=responsibility.css.map */

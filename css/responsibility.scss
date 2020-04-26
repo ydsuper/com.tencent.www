@@ -1,7 +1,3 @@
-body {
-    height: 6333px;
-}
-
 .wrap {}
 
 // 主体
@@ -63,6 +59,7 @@ body {
 
     .together-box {
         width: 100%;
+        margin-bottom: 96px;
         position: relative;
 
         .tg-bg {
@@ -95,6 +92,229 @@ body {
 
             >img {
                 width: 100%;
+            }
+        }
+    }
+
+    // 践行承诺
+    .promess-box {
+        width: 100%;
+
+        h3 {
+            width: 100%;
+            color: #2a2e2e;
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .con-bottom {
+            width: 100%;
+        }
+
+    }
+}
+
+// 践行承诺 & 鼓励创新
+.promess-box,
+.brand-item-inno {
+    .con-bottom {
+        margin-top: 45px;
+    }
+
+    .list {
+        li {
+            float: left;
+            width: 50%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .mess {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 32px;
+            box-sizing: border-box;
+
+            >h4 {
+                color: #fff;
+                font-size: 24px;
+                font-family: 'TencentSansw7';
+                margin-bottom: 8px;
+            }
+        }
+
+        .desc {
+            display: none;
+            height: 25px;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 25px;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+    }
+}
+
+// 支持善举
+.brand-item-love {
+    h3 {
+        width: 100%;
+        color: #2a2e2e;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+        margin-bottom: 44px;
+        overflow: hidden;
+    }
+
+    .love-box {
+        .lb-l {
+            float: left;
+            width: 49%;
+        }
+
+        .lb-r {
+            float: right;
+            width: 49%;
+        }
+
+        .pic {
+            width: 100%;
+        }
+
+        h4 {
+            color: #2A2E2E;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'TencentSansw7';
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .desc {
+            color: #5F6464;
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+
+    .love-box-1 {
+        margin-bottom: 44px;
+    }
+
+    .love-box-2 {
+        .lb-l {
+            float: left;
+            width: 32.333%;
+        }
+
+        .lb-m {
+            float: left;
+            width: 32.333%;
+            margin: 0 1.5%;
+        }
+
+        .lb-r {
+            float: right;
+            width: 32.333%;
+        }
+
+        h4 {
+            color: #2A2E2E;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Microsoft YaHei';
+            line-height: 36px;
+            margin-bottom: 8px;
+        }
+    }
+
+}
+
+// 鼓励创新
+.brand-item-inno {
+    h3 {
+        width: 100%;
+        color: #2a2e2e;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+        margin-bottom: 45px;
+        overflow: hidden;
+    }
+
+    .list {
+        >li {
+            &:hover {
+                .desc {
+                    opacity: 1;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .con-bottom {
+
+        .desc {
+            display: block;
+            margin-bottom: -30px;
+        }
+    }
+}
+
+// 企业社会责任报告
+.link-box {
+    width: 100%;
+    margin-top: 96px;
+    position: relative;
+
+    .bg {
+        width: 100%;
+    }
+
+    .mess {
+        position: absolute;
+        left: 78px;
+        top: 132px;
+    }
+
+    h2 {
+        color: #2a2e2e;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+    }
+
+    .desc {
+        color: #2a2e2e;
+        font-size: 20px;
+        line-height: 36px;
+        margin: 4px 0 16px;
+    }
+
+    .go-link {
+        span {
+            float: left;
+            color: #0052d9;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 36px;
+            margin-right: 9px;
+        }
+
+        .go-icon {
+            float: left;
+            margin-top: 10px;
+
+            >img {
+                width: 19px;
             }
         }
     }
