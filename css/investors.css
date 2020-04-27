@@ -170,8 +170,8 @@ body {
 
 .brand-item-fnews .new-item li {
   width: 100%;
-  min-height: 91px;
-  margin-bottom: 25px;
+  min-height: 93px;
+  margin-bottom: 23px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -262,5 +262,615 @@ body {
 
 .brand-item-fnews .new-item li:hover .down-icon {
   display: block;
+}
+
+.brand-item-ntrt h3 {
+  width: 100%;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F2F3F5;
+  margin-bottom: 50px;
+}
+
+.brand-item-ntrt .ntcrpt {
+  width: 100%;
+}
+
+.brand-item-ntrt .ntcrpt h4 {
+  float: left;
+  color: #2A2E2E;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.brand-item-ntrt .ntcrpt .lookall {
+  float: right;
+  color: #5F6464;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.brand-item-ntrt .ntcrpt .lookall > i {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: url(../images/investors/more-awart.png) no-repeat center;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+
+.brand-item-ntrt .title {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.brand-item-ntrt .ntc {
+  float: left;
+  width: 47%;
+}
+
+.brand-item-ntrt .ntc .ntc-box {
+  width: 100%;
+  height: 290px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #EFEFEF;
+  padding: 32px 42px 0px 32px;
+  background-color: #fff;
+}
+
+.brand-item-ntrt .ntc .ntc-list > li {
+  margin-bottom: 24px;
+}
+
+.brand-item-ntrt .ntc .ntc-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.brand-item-ntrt .ntc .ind-bg {
+  float: left;
+  width: 21px;
+  height: 20px;
+  color: #fff;
+  background: url(../images/investors/ind-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: 'TencentSansw7';
+  margin-top: 5px;
+  margin-right: 24px;
+}
+
+.brand-item-ntrt .ntc .mess {
+  overflow: hidden;
+}
+
+.brand-item-ntrt .ntc .mess > a {
+  display: block;
+}
+
+.brand-item-ntrt .ntc .tit {
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.brand-item-ntrt .ntc .data {
+  color: #919797;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.brand-item-ntrt .rpt {
+  float: right;
+  width: 560px;
+}
+
+.brand-item-ntrt .rpt-box .l-box {
+  float: left;
+  width: 80px;
+  height: 290px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.brand-item-ntrt .rpt-box .l-box > .line {
+  width: 1px;
+  background-color: #d8d9dc;
+  position: absolute;
+  top: 68px;
+  bottom: 60px;
+}
+
+.brand-item-ntrt .rpt-box .l-box > .line > img {
+  width: 1px;
+  position: absolute;
+  bottom: -72px;
+  left: 0;
+}
+
+.brand-item-ntrt .rpt-box .l-box > .y-node {
+  position: absolute;
+  left: -2px;
+  overflow: hidden;
+}
+
+.brand-item-ntrt .rpt-box .l-box > .y-node-1 {
+  top: 50px;
+}
+
+.brand-item-ntrt .rpt-box .l-box > .y-node-2 {
+  top: 220px;
+}
+
+.brand-item-ntrt .rpt-box .l-box .dot {
+  float: left;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #919797;
+  margin-top: 13px;
+}
+
+.brand-item-ntrt .rpt-box .l-box span {
+  float: left;
+  color: #919797;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 29px;
+  padding-left: 12px;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list > li {
+  float: left;
+  background: #fff;
+  -webkit-box-shadow: 8px 8px 0 0 #F2F3F5;
+          box-shadow: 8px 8px 0 0 #F2F3F5;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list > li:nth-child(2n-1) {
+  margin-right: 32px;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list > li:nth-last-child(-n+2) {
+  margin-top: 20px;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list > li:hover .down-icon {
+  display: block;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list > li > a {
+  display: block;
+  width: 210px;
+  height: 130px;
+  padding: 32px 0 0 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list .y-label {
+  width: 100%;
+  overflow: hidden;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list .year {
+  float: left;
+  color: #212525;
+  font-size: 24px;
+  font-family: 'TencentSansw7';
+}
+
+.brand-item-ntrt .rpt-box .rpt-list .type-bg {
+  float: left;
+  height: 20px;
+  min-width: 35px;
+  color: #fff;
+  background: url(../images/investors/type-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  font-size: 12px;
+  font-family: 'TencentSansw7';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 4px;
+  margin-top: 11px;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list .type-txt {
+  color: #5F6464;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 4px;
+}
+
+.brand-item-ntrt .rpt-box .rpt-list .down-icon {
+  display: none;
+  width: 36px;
+  height: 36px;
+  background: url(../images/investors/down-icon.png) no-repeat center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 46px;
+  right: 26px;
+}
+
+.brand-item-phmeet {
+  padding-top: 72px !important;
+}
+
+.brand-item-phmeet h3 {
+  width: 100%;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F2F3F5;
+  margin-bottom: 50px;
+}
+
+.brand-item-phmeet .phmeet {
+  width: 100%;
+}
+
+.brand-item-phmeet .phmeet .l-box {
+  float: left;
+  width: 47.5%;
+}
+
+.brand-item-phmeet .phmeet .r-box {
+  float: right;
+  width: 560px;
+}
+
+.brand-item-phmeet .phmeet .title {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.brand-item-phmeet .phmeet h4 {
+  float: left;
+  color: #2A2E2E;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.brand-item-phmeet .phmeet .lookall {
+  float: right;
+  color: #5F6464;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.brand-item-phmeet .phmeet .lookall > i {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: url(../images/investors/more-awart.png) no-repeat center;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+
+.brand-item-phmeet .phmeet-box {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #EFEFEF;
+  min-height: 404px;
+}
+
+.brand-item-phmeet .phmeet-box .tit {
+  height: 60px;
+  color: #2A2E2E;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 42px;
+  border-bottom: 1px solid #F2F3F5;
+  line-height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.brand-item-phmeet .phmeet-box > .item {
+  margin-top: 6px;
+  padding-left: 42px;
+}
+
+.brand-item-phmeet .phmeet-box > .item.first-item {
+  margin-top: 8px;
+}
+
+.brand-item-phmeet .phmeet-box .label {
+  float: left;
+  color: #2A2E2E;
+  min-width: 64px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-right: 32px;
+}
+
+.brand-item-phmeet .phmeet-box .val {
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  overflow: hidden;
+}
+
+.brand-item-phmeet .phmeet-box .play-icon {
+  display: block;
+}
+
+.brand-item-phmeet .phmeet-box .play-icon > img {
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+}
+
+.brand-item-phmeet .phmeet-box .tel-mess span {
+  display: inline-block;
+  min-width: 70px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.brand-item-phmeet .ivcal-box {
+  width: 100%;
+  min-height: 404px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #EFEFEF;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.brand-item-phmeet .ivcal-box .tab-list {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #F2F3F5;
+}
+
+.brand-item-phmeet .ivcal-box .tab-list > li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.brand-item-phmeet .ivcal-box .tab-list > li.active-tab > span {
+  border-bottom: 2px solid #0052D9;
+}
+
+.brand-item-phmeet .ivcal-box .tab-list span {
+  display: inline-block;
+  height: 55px;
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.brand-item-phmeet .ivcal-box .tab-con > li {
+  display: none;
+}
+
+.brand-item-phmeet .ivcal-box .tab-con > li.active-con {
+  display: block;
+}
+
+.brand-item-phmeet .ivcal-box .step-line {
+  width: 1px;
+  background: #D8D9DC;
+  margin-left: 6.95%;
+  margin-right: 6%;
+  position: absolute;
+  top: 91px;
+  bottom: 72px;
+  left: 0;
+}
+
+.brand-item-phmeet .ivcal-box .step-line > img {
+  position: absolute;
+  bottom: -72px;
+  width: 1px;
+}
+
+.brand-item-phmeet .ivcal-box .step-box {
+  width: 87%;
+  float: right;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .item {
+  padding-right: 40px;
+  margin-top: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .item.up .more-icon {
+  -webkit-animation: more-icon-up 0.4s linear forwards;
+          animation: more-icon-up 0.4s linear forwards;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .item.down .more-icon {
+  -webkit-animation: more-icon-down 0.4s linear forwards;
+          animation: more-icon-down 0.4s linear forwards;
+}
+
+@-webkit-keyframes more-icon-up {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes more-icon-up {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes more-icon-down {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes more-icon-down {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.brand-item-phmeet .ivcal-box .step-box .first-item {
+  margin-top: 22px;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .dot {
+  width: 5px;
+  height: 5px;
+  background: #5f6464;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  left: -7.4%;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .tit {
+  width: 100%;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .tit > .t {
+  float: left;
+  width: 395px;
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  overflow: hidden;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .tit > .more-icon {
+  float: right;
+  width: 16px;
+  margin-top: 12px;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .mess {
+  width: 100%;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .mess p {
+  color: #5F6464;
+  font-size: 14px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .data > p {
+  color: #2A2E2E;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .data-icon {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  margin-right: 7px;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .detail {
+  display: none;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .detail > li {
+  margin-top: 9px;
+  overflow: hidden;
+}
+
+.brand-item-phmeet .ivcal-box .step-box .icon {
+  float: left;
+  width: 15px;
+  margin-top: 4px;
+  padding-right: 8px;
+}
+
+.brand-item-toolkit {
+  padding-bottom: 64px !important;
+}
+
+.brand-item-toolkit h3 {
+  width: 100%;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+  margin-bottom: 32px;
+}
+
+.brand-item-toolkit .tool-list > li {
+  float: left;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin-right: 24px;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.brand-item-toolkit .tool-list > li:hover {
+  background-color: #fff;
+}
+
+.brand-item-toolkit .tool-list > li > a {
+  display: block;
+}
+
+.brand-item-toolkit .tool-list > li img {
+  height: 60px;
+  margin: 43px auto 0;
+}
+
+.brand-item-toolkit .tool-list > li .label {
+  color: #2A2E2E;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.01px;
+  margin-top: 12px;
 }
 /*# sourceMappingURL=investors.css.map */

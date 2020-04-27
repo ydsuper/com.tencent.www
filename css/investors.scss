@@ -184,8 +184,8 @@ body {
 
         li {
             width: 100%;
-            min-height: 91px;
-            margin-bottom: 25px;
+            min-height: 93px;
+            margin-bottom: 23px;
             box-sizing: border-box;
             position: relative;
             cursor: pointer;
@@ -276,6 +276,612 @@ body {
                 .down-icon {
                     display: block;
                 }
+            }
+        }
+    }
+}
+
+// 公告及财务报告
+.brand-item-ntrt {
+    h3 {
+        width: 100%;
+        color: #2a2e2e;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+        padding-bottom: 24px;
+        border-bottom: 1px solid #F2F3F5;
+        margin-bottom: 50px;
+    }
+
+    .ntcrpt {
+        width: 100%;
+
+        h4 {
+            float: left;
+            color: #2A2E2E;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: bold;
+        }
+
+        .lookall {
+            float: right;
+            color: #5F6464;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 7px;
+
+            >i {
+                display: inline-block;
+                width: 8px;
+                height: 14px;
+                background: url(../images/investors/more-awart.png) no-repeat center;
+                background-size: 100% 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .title {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .ntc {
+        float: left;
+        width: 47%;
+
+        .ntc-box {
+            width: 100%;
+            height: 290px;
+            box-sizing: border-box;
+            border: 1px solid #EFEFEF;
+            padding: 32px 42px 0px 32px;
+            background-color: #fff;
+        }
+
+        .ntc-list {
+            >li {
+                margin-bottom: 24px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .ind-bg {
+            float: left;
+            width: 21px;
+            height: 20px;
+            color: #fff;
+            background: url(../images/investors/ind-bg.png) no-repeat center;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            font-family: 'TencentSansw7';
+            margin-top: 5px;
+            margin-right: 24px;
+        }
+
+        .mess {
+            overflow: hidden;
+
+            >a {
+                display: block;
+            }
+        }
+
+        .tit {
+            color: #2A2E2E;
+            font-size: 16px;
+            line-height: 29px;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .data {
+            color: #919797;
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+
+    .rpt {
+        float: right;
+        width: 560px;
+    }
+
+    .rpt-box {
+        .l-box {
+            float: left;
+            width: 80px;
+            height: 290px;
+            margin-left: 10px;
+            position: relative;
+
+            >.line {
+                width: 1px;
+                background-color: #d8d9dc;
+                position: absolute;
+                top: 68px;
+                bottom: 60px;
+
+                >img {
+                    width: 1px;
+                    position: absolute;
+                    bottom: -72px;
+                    left: 0;
+                }
+            }
+
+            >.y-node {
+                position: absolute;
+                left: -2px;
+                overflow: hidden;
+            }
+
+            >.y-node-1 {
+                top: 50px;
+            }
+
+            >.y-node-2 {
+                top: 220px;
+            }
+
+            .dot {
+                float: left;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: #919797;
+                margin-top: 13px;
+            }
+
+            span {
+                float: left;
+                color: #919797;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 29px;
+                padding-left: 12px;
+            }
+        }
+
+        .r-box {}
+
+        .rpt-list {
+            >li {
+                float: left;
+                background: #fff;
+                box-shadow: 8px 8px 0 0 #F2F3F5;
+
+                &:nth-child(2n-1) {
+                    margin-right: 32px;
+                }
+
+                &:nth-last-child(-n+2) {
+                    margin-top: 20px;
+                }
+
+                &:hover {
+                    .down-icon {
+                        display: block;
+                    }
+                }
+
+                >a {
+                    display: block;
+                    width: 210px;
+                    height: 130px;
+                    padding: 32px 0 0 24px;
+                    box-sizing: border-box;
+                    position: relative;
+                }
+            }
+
+            .y-label {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .year {
+                float: left;
+                color: #212525;
+                font-size: 24px;
+                font-family: 'TencentSansw7';
+            }
+
+            .type-bg {
+                float: left;
+                height: 20px;
+                min-width: 35px;
+                color: #fff;
+                background: url(../images/investors/type-bg.png) no-repeat center;
+                background-size: 100% 100%;
+                font-size: 12px;
+                font-family: 'TencentSansw7';
+                box-sizing: border-box;
+                text-align: center;
+                line-height: 20px;
+                margin-left: 4px;
+                margin-top: 11px;
+            }
+
+            .type-txt {
+                color: #5F6464;
+                font-size: 14px;
+                line-height: 25px;
+                margin-top: 4px;
+            }
+
+            .down-icon {
+                display: none;
+                width: 36px;
+                height: 36px;
+                background: url(../images/investors/down-icon.png) no-repeat center;
+                background-size: 100% 100%;
+                position: absolute;
+                top: 46px;
+                right: 26px;
+            }
+        }
+    }
+}
+
+// 业绩电话会及路演
+.brand-item-phmeet {
+    padding-top: 72px !important;
+
+    h3 {
+        width: 100%;
+        color: #2a2e2e;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+        padding-bottom: 24px;
+        border-bottom: 1px solid #F2F3F5;
+        margin-bottom: 50px;
+    }
+
+    .phmeet {
+        width: 100%;
+
+        .l-box {
+            float: left;
+            width: 47.5%;
+        }
+
+        .r-box {
+            float: right;
+            width: 560px;
+        }
+
+        .title {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        h4 {
+            float: left;
+            color: #2A2E2E;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 36px;
+        }
+
+        .lookall {
+            float: right;
+            color: #5F6464;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 7px;
+
+            >i {
+                display: inline-block;
+                width: 8px;
+                height: 14px;
+                background: url(../images/investors/more-awart.png) no-repeat center;
+                background-size: 100% 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .phmeet-box {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #EFEFEF;
+        min-height: 404px;
+
+        .tit {
+            height: 60px;
+            color: #2A2E2E;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 42px;
+            border-bottom: 1px solid #F2F3F5;
+            line-height: 60px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: break-all;
+        }
+
+        >.item {
+            margin-top: 6px;
+            padding-left: 42px;
+
+            &.first-item {
+                margin-top: 8px;
+            }
+        }
+
+        .label {
+            float: left;
+            color: #2A2E2E;
+            min-width: 64px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 29px;
+            margin-right: 32px;
+        }
+
+        .val {
+            color: #2A2E2E;
+            font-size: 16px;
+            line-height: 29px;
+            overflow: hidden;
+        }
+
+        .play-icon {
+            display: block;
+
+            >img {
+                width: 20px;
+                height: 20px;
+                margin-top: 6px;
+            }
+        }
+
+        .tel-mess {
+            span {
+                display: inline-block;
+                min-width: 70px;
+                text-align: justify;
+                text-align-last: justify;
+            }
+        }
+    }
+
+    .ivcal-box {
+        width: 100%;
+        min-height: 404px;
+        box-sizing: border-box;
+        border: 1px solid #EFEFEF;
+        padding-bottom: 32px;
+        position: relative;
+
+        .tab-list {
+            width: 100%;
+            height: 54px;
+            border-bottom: 1px solid #F2F3F5;
+
+            >li {
+                float: left;
+                width: 50%;
+                text-align: center;
+                cursor: pointer;
+
+                &.active-tab {
+                    >span {
+                        border-bottom: 2px solid #0052D9;
+                    }
+                }
+            }
+
+            span {
+                display: inline-block;
+                height: 55px;
+                color: #2A2E2E;
+                font-size: 16px;
+                line-height: 55px;
+                box-sizing: border-box;
+            }
+        }
+
+        .tab-con {
+            >li {
+                display: none;
+
+                &.active-con {
+                    display: block;
+                }
+            }
+        }
+
+        .step-line {
+            width: 1px;
+            background: #D8D9DC;
+            margin-left: 6.95%;
+            margin-right: 6%;
+            position: absolute;
+            top: 91px;
+            bottom: 72px;
+            left: 0;
+
+            >img {
+                position: absolute;
+                bottom: -72px;
+                width: 1px;
+            }
+        }
+
+        .step-box {
+            width: 87%;
+            float: right;
+
+            .item {
+                padding-right: 40px;
+                margin-top: 24px;
+                position: relative;
+                cursor: pointer;
+
+                &.up {
+                    .more-icon {
+                        animation: more-icon-up 0.4s linear forwards;
+                    }
+                }
+
+                &.down {
+                    .more-icon {
+                        animation: more-icon-down 0.4s linear forwards;
+                    }
+                }
+
+                @keyframes more-icon-up {
+                    0% {
+                        transform: rotate(0);
+                    }
+
+                    100% {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                @keyframes more-icon-down {
+                    0% {
+
+                        transform: rotate(180deg);
+                    }
+
+                    100% {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+            .first-item {
+                margin-top: 22px;
+            }
+
+            .dot {
+                width: 5px;
+                height: 5px;
+                background: #5f6464;
+                border-radius: 50%;
+                position: absolute;
+                top: 14px;
+                left: -7.4%;
+            }
+
+            .tit {
+                width: 100%;
+                margin-bottom: 4px;
+                overflow: hidden;
+
+                >.t {
+                    float: left;
+                    width: 395px;
+                    color: #2A2E2E;
+                    font-size: 16px;
+                    line-height: 29px;
+                    overflow: hidden;
+                }
+
+                >.more-icon {
+                    float: right;
+                    width: 16px;
+                    margin-top: 12px;
+                }
+            }
+
+            .mess {
+                width: 100%;
+
+                p {
+                    color: #5F6464;
+                    font-size: 14px;
+                    line-height: 25px;
+                    overflow: hidden;
+                }
+            }
+
+            .data {
+                >p {
+                    color: #2A2E2E;
+                }
+            }
+
+            .data-icon {
+                float: left;
+                width: 16px;
+                height: 16px;
+                margin-top: 5px;
+                margin-right: 7px;
+            }
+
+            .detail {
+                display: none;
+
+                >li {
+                    margin-top: 9px;
+                    overflow: hidden;
+                }
+            }
+
+            .icon {
+                float: left;
+                width: 15px;
+                margin-top: 4px;
+                padding-right: 8px;
+            }
+        }
+    }
+}
+
+// 工具包
+.brand-item-toolkit {
+    padding-bottom: 64px !important;
+
+    h3 {
+        width: 100%;
+        color: #2a2e2e;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+        margin-bottom: 32px;
+    }
+
+    .tool-list {
+        >li {
+            float: left;
+            width: 180px;
+            height: 180px;
+            text-align: center;
+            margin-right: 24px;
+            transition: background-color 0.2s linear;
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            >a {
+                display: block;
+            }
+
+            img {
+                height: 60px;
+                margin: 43px auto 0 ;
+            }
+
+            .label {
+                color: #2A2E2E;
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: -0.01px;
+                margin-top: 12px;
             }
         }
     }
