@@ -1,0 +1,579 @@
+body {
+    height: 6333px;
+}
+
+.wrap {}
+
+// 主体
+.wrap-main {
+    width: 100%;
+    margin-top: 72px;
+
+    .main-con {
+        width: 100%;
+    }
+}
+
+.main-top {
+    .mod-section-bg {
+        width: 100%;
+        height: 482px;
+        background: url(../images/media/media-1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .mod-con {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        h2 {
+            font-family: 'TencentSansw3';
+            font-size: 44px;
+            color: #2A2E2E;
+            margin-bottom: 8px;
+            margin-top: 207px;
+        }
+    }
+}
+
+// elevator导航
+.mod-elevator {
+    width: 100%;
+    height: 54px;
+    position: relative;
+    background-color: #fbfbfb;
+
+    .ele-navigation {
+        width: 100%;
+        height: 54px;
+        background-color: #fbfbfb;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &.fixed {
+            position: fixed;
+            z-index: 66;
+        }
+    }
+
+    .ele-nav-list {
+        width: 1200px;
+        height: 53px;
+        margin: 0 auto;
+        position: relative;
+        left: 16px;
+    }
+
+    .ele-nav-list {
+
+        >li {
+            display: inline-block;
+            margin-right: 56px;
+
+            >a {
+                height: 53px;
+                line-height: 53px;
+                font-size: 16px;
+            }
+        }
+
+        .underline {
+            width: 64px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #0052d9;
+        }
+    }
+}
+
+// elevator导航内容
+.mod-ele-content {
+    width: 100%;
+
+    .brand-item {
+        width: 100%;
+
+        &.white-bg {
+            padding: 96px 0;
+            background-color: #fff;
+        }
+
+        &.gray-bg {
+            padding: 96px 0;
+            background-color: #fbfbfb;
+        }
+    }
+
+    .brand-con {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
+
+// 企业动态等title
+.brand-con {
+    .title {
+        >h3 {
+            float: left;
+            color: #2a2e2e;
+            font-size: 30px;
+            font-family: 'TencentSansw7';
+        }
+
+        >.lookall {
+            float: right;
+            color: #5F6464;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 12px;
+
+            >i {
+                display: inline-block;
+                width: 8px;
+                height: 14px;
+                background: url(../images/investors/more-awart.png) no-repeat center;
+                background-size: 100% 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+
+// 企业动态
+.brand-item-bsnmove {
+    padding-top: 72px !important;
+
+    .bsnmove-box {
+        width: 100%;
+        margin-top: 44px;
+
+        .item {
+            float: left;
+            width: 32%;
+            margin-left: 2%;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            >a {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .mess {
+                margin-top: 24px;
+                padding: 0 16px;
+            }
+
+            .tit {
+                width: 100%;
+                color: #2A2E2E;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 30px;
+                overflow: hidden;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .desc {
+                width: 100%;
+                height: 58px;
+                color: #2A2E2E;
+                font-size: 16px;
+                line-height: 29px;
+                margin-top: 8px;
+                margin-bottom: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .date {
+                width: 100%;
+                color: #919797;
+                font-size: 16px;
+                line-height: 28.8px;
+            }
+        }
+    }
+
+}
+
+
+// 财务新闻 
+.brand-item-fnews {
+
+    .news-box {
+        width: 100%;
+        margin-top: 32px;
+
+        .new-item {
+            width: 49%;
+            background: #fff;
+            border: 1px solid #efefef;
+            padding: 32px 45px 41px 0;
+            box-sizing: border-box;
+
+            &.l-box {
+                float: left;
+            }
+
+            &.r-box {
+                float: right;
+            }
+        }
+    }
+
+    .new-item {
+        h4 {
+            color: #5f6464;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 25px;
+            padding-left: 32px;
+        }
+
+        .new-list {
+            margin-top: 40px;
+        }
+
+        li {
+            width: 100%;
+            min-height: 93px;
+            margin-bottom: 23px;
+            box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .mess {
+                width: 82%;
+                padding-left: 32px;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .tit {
+                width: 100%;
+                color: #2A2E2E;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: -0.01px;
+                line-height: 30px;
+                margin-bottom: 4px;
+                // 一行显示 省略号
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-break: break-word;
+            }
+
+            .abstract {
+                width: 100%;
+                margin-bottom: 4px;
+                overflow: hidden;
+            }
+
+            .abstract-link {
+                display: block;
+                color: #0052d9;
+                font-size: 16px;
+                font-weight: bold;
+
+                >span {
+                    float: left;
+                }
+            }
+
+            .blue-awart {
+                float: left;
+                width: 20px;
+                margin-top: 2px;
+                margin-left: 3px;
+            }
+
+            .date {
+                width: 100%;
+                color: #919797;
+                font-size: 16px;
+                line-height: 29px;
+            }
+
+            .line {
+                display: none;
+                width: 6px;
+                height: 100%;
+                background: #0052D9;
+                position: absolute;
+                left: -1px;
+                top: 0;
+            }
+
+            .down-icon {
+                display: none;
+                width: 36px;
+                height: 36px;
+                background: url(../images/investors/down-icon.png) no-repeat center;
+                background-size: 100% 100%;
+                position: absolute;
+                right: 0;
+                top: 12px;
+            }
+
+            &:hover {
+                .line {
+                    display: block;
+                }
+
+                .down-icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// 腾讯视角
+.brand-item-perspective {
+    .perspective-box {
+        width: 100%;
+        margin-top: 44px;
+    }
+
+    .l-box {
+        float: left;
+        width: 588px;
+        height: 391px;
+        margin-right: 72px;
+        position: relative;
+
+        >a {
+            display: block;
+        }
+
+        .per-bg {
+            width: 588px;
+            height: 391px;
+            background: url(../images/media/perspective-1.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .desc {
+            width: 100%;
+            color: #fff;
+            box-sizing: border-box;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.3;
+            padding: 24px;
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .03), rgba(0, 0, 0, .1), rgba(0, 0, 0, .2), rgba(0, 0, 0, .3));
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .r-box {
+        overflow: hidden;
+
+        li {
+            width: 100%;
+            margin-top: 41px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .label {
+            width: 100%;
+            color: #2A2E2E;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            color: #919797;
+            font-size: 16px;
+            line-height: 29px;
+        }
+    }
+}
+
+// 媒体资料库
+.brand-item-medinfo {
+    padding-bottom: 20px !important;
+
+    .white-bg {
+        background-color: #fff;
+    }
+
+    h3 {
+        width: 100%;
+        color: #2a2e2e;
+        font-size: 30px;
+        font-family: 'TencentSansw7';
+    }
+
+    .medinfo-box {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .medinfo-tab {
+        width: 100%;
+
+        >li {
+            float: left;
+            width: 176px;
+            height: 174px;
+            box-sizing: border-box;
+            padding-top: 37px;
+            padding-bottom: 36px;
+            cursor: pointer;
+            position: relative;
+
+            >.line {
+                display: none;
+                width: 100%;
+                height: 4px;
+                background: #0052D9;
+                position: absolute;
+                top: -4px;
+                left: 0;
+            }
+
+            >.icon {
+                margin: 0 auto;
+                height: 60px;
+                margin-bottom: 9px;
+            }
+
+            >.label {
+                width: 100%;
+                color: #2A2E2E;
+                font-size: 16px;
+                text-align: center;
+                line-height: 29px;
+            }
+        }
+
+        .active {
+            background-color: #fff;
+
+            >.line {
+                display: block;
+            }
+        }
+    }
+
+    .tab-con {
+        .con-ul {
+            padding-top: 40px;
+        }
+    }
+
+    .con-ul {
+        >li {
+            display: none;
+
+            &.active-con {
+                display: block;
+            }
+        }
+    }
+
+    .con-list {
+        li {
+            display: inline-block;
+            width: 23.5%;
+            margin-right: 1.6%;
+            margin-bottom: 24px;
+            vertical-align: top;
+            position: relative;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            >a {
+                display: block;
+            }
+
+            &:hover {
+                .icon {
+                    display: block;
+                }
+            }
+        }
+
+        .pic {
+            height: 158px;
+            margin-bottom: 8px;
+            position: relative;
+
+            >.icon {
+                display: none;
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .label {
+            width: 100%;
+            font-size: 16px;
+            color: #2A2E2E;
+            text-align: center;
+            line-height: 29px;
+        }
+
+        .look-all {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 82, 217, 0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            >.label {
+                color: #fff;
+                font-size: 20px;
+                line-height: 36px;
+                margin-top: 48px;
+                text-align: center;
+            }
+
+            >.desc {
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+
+    }
+
+
+}

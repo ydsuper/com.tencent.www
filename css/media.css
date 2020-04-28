@@ -1,0 +1,543 @@
+body {
+  height: 6333px;
+}
+
+.wrap-main {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.wrap-main .main-con {
+  width: 100%;
+}
+
+.main-top .mod-section-bg {
+  width: 100%;
+  height: 482px;
+  background: url(../images/media/media-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main-top .mod-con {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-top .mod-con h2 {
+  font-family: 'TencentSansw3';
+  font-size: 44px;
+  color: #2A2E2E;
+  margin-bottom: 8px;
+  margin-top: 207px;
+}
+
+.mod-elevator {
+  width: 100%;
+  height: 54px;
+  position: relative;
+  background-color: #fbfbfb;
+}
+
+.mod-elevator .ele-navigation {
+  width: 100%;
+  height: 54px;
+  background-color: #fbfbfb;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mod-elevator .ele-navigation.fixed {
+  position: fixed;
+  z-index: 66;
+}
+
+.mod-elevator .ele-nav-list {
+  width: 1200px;
+  height: 53px;
+  margin: 0 auto;
+  position: relative;
+  left: 16px;
+}
+
+.mod-elevator .ele-nav-list > li {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.mod-elevator .ele-nav-list > li > a {
+  height: 53px;
+  line-height: 53px;
+  font-size: 16px;
+}
+
+.mod-elevator .ele-nav-list .underline {
+  width: 64px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #0052d9;
+}
+
+.mod-ele-content {
+  width: 100%;
+}
+
+.mod-ele-content .brand-item {
+  width: 100%;
+}
+
+.mod-ele-content .brand-item.white-bg {
+  padding: 96px 0;
+  background-color: #fff;
+}
+
+.mod-ele-content .brand-item.gray-bg {
+  padding: 96px 0;
+  background-color: #fbfbfb;
+}
+
+.mod-ele-content .brand-con {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-con .title > h3 {
+  float: left;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.brand-con .title > .lookall {
+  float: right;
+  color: #5F6464;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.brand-con .title > .lookall > i {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: url(../images/investors/more-awart.png) no-repeat center;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+
+.brand-item-bsnmove {
+  padding-top: 72px !important;
+}
+
+.brand-item-bsnmove .bsnmove-box {
+  width: 100%;
+  margin-top: 44px;
+}
+
+.brand-item-bsnmove .bsnmove-box .item {
+  float: left;
+  width: 32%;
+  margin-left: 2%;
+}
+
+.brand-item-bsnmove .bsnmove-box .item:first-child {
+  margin-left: 0;
+}
+
+.brand-item-bsnmove .bsnmove-box .item > a {
+  display: block;
+}
+
+.brand-item-bsnmove .bsnmove-box .item img {
+  width: 100%;
+}
+
+.brand-item-bsnmove .bsnmove-box .item .mess {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+
+.brand-item-bsnmove .bsnmove-box .item .tit {
+  width: 100%;
+  color: #2A2E2E;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.brand-item-bsnmove .bsnmove-box .item .desc {
+  width: 100%;
+  height: 58px;
+  color: #2A2E2E;
+  font-size: 16px;
+  line-height: 29px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.brand-item-bsnmove .bsnmove-box .item .date {
+  width: 100%;
+  color: #919797;
+  font-size: 16px;
+  line-height: 28.8px;
+}
+
+.brand-item-fnews .news-box {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.brand-item-fnews .news-box .new-item {
+  width: 49%;
+  background: #fff;
+  border: 1px solid #efefef;
+  padding: 32px 45px 41px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.brand-item-fnews .news-box .new-item.l-box {
+  float: left;
+}
+
+.brand-item-fnews .news-box .new-item.r-box {
+  float: right;
+}
+
+.brand-item-fnews .new-item h4 {
+  color: #5f6464;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  padding-left: 32px;
+}
+
+.brand-item-fnews .new-item .new-list {
+  margin-top: 40px;
+}
+
+.brand-item-fnews .new-item li {
+  width: 100%;
+  min-height: 93px;
+  margin-bottom: 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+.brand-item-fnews .new-item li:last-child {
+  margin-bottom: 0;
+}
+
+.brand-item-fnews .new-item li .mess {
+  width: 82%;
+  padding-left: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.brand-item-fnews .new-item li .tit {
+  width: 100%;
+  color: #2A2E2E;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.01px;
+  line-height: 30px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.brand-item-fnews .new-item li .abstract {
+  width: 100%;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.brand-item-fnews .new-item li .abstract-link {
+  display: block;
+  color: #0052d9;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.brand-item-fnews .new-item li .abstract-link > span {
+  float: left;
+}
+
+.brand-item-fnews .new-item li .blue-awart {
+  float: left;
+  width: 20px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.brand-item-fnews .new-item li .date {
+  width: 100%;
+  color: #919797;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.brand-item-fnews .new-item li .line {
+  display: none;
+  width: 6px;
+  height: 100%;
+  background: #0052D9;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+.brand-item-fnews .new-item li .down-icon {
+  display: none;
+  width: 36px;
+  height: 36px;
+  background: url(../images/investors/down-icon.png) no-repeat center;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.brand-item-fnews .new-item li:hover .line {
+  display: block;
+}
+
+.brand-item-fnews .new-item li:hover .down-icon {
+  display: block;
+}
+
+.brand-item-perspective .perspective-box {
+  width: 100%;
+  margin-top: 44px;
+}
+
+.brand-item-perspective .l-box {
+  float: left;
+  width: 588px;
+  height: 391px;
+  margin-right: 72px;
+  position: relative;
+}
+
+.brand-item-perspective .l-box > a {
+  display: block;
+}
+
+.brand-item-perspective .l-box .per-bg {
+  width: 588px;
+  height: 391px;
+  background: url(../images/media/perspective-1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.brand-item-perspective .l-box .desc {
+  width: 100%;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.3;
+  padding: 24px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(0, 0, 0, 0.03)), color-stop(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  bottom: 0;
+}
+
+.brand-item-perspective .r-box {
+  overflow: hidden;
+}
+
+.brand-item-perspective .r-box li {
+  width: 100%;
+  margin-top: 41px;
+}
+
+.brand-item-perspective .r-box li:first-child {
+  margin-top: 0;
+}
+
+.brand-item-perspective .r-box .label {
+  width: 100%;
+  color: #2A2E2E;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.brand-item-perspective .r-box .date {
+  color: #919797;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.brand-item-medinfo {
+  padding-bottom: 20px !important;
+}
+
+.brand-item-medinfo .white-bg {
+  background-color: #fff;
+}
+
+.brand-item-medinfo h3 {
+  width: 100%;
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.brand-item-medinfo .medinfo-box {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.brand-item-medinfo .medinfo-tab {
+  width: 100%;
+}
+
+.brand-item-medinfo .medinfo-tab > li {
+  float: left;
+  width: 176px;
+  height: 174px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 37px;
+  padding-bottom: 36px;
+  cursor: pointer;
+  position: relative;
+}
+
+.brand-item-medinfo .medinfo-tab > li > .line {
+  display: none;
+  width: 100%;
+  height: 4px;
+  background: #0052D9;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.brand-item-medinfo .medinfo-tab > li > .icon {
+  margin: 0 auto;
+  height: 60px;
+  margin-bottom: 9px;
+}
+
+.brand-item-medinfo .medinfo-tab > li > .label {
+  width: 100%;
+  color: #2A2E2E;
+  font-size: 16px;
+  text-align: center;
+  line-height: 29px;
+}
+
+.brand-item-medinfo .medinfo-tab .active {
+  background-color: #fff;
+}
+
+.brand-item-medinfo .medinfo-tab .active > .line {
+  display: block;
+}
+
+.brand-item-medinfo .tab-con .con-ul {
+  padding-top: 40px;
+}
+
+.brand-item-medinfo .con-ul > li {
+  display: none;
+}
+
+.brand-item-medinfo .con-ul > li.active-con {
+  display: block;
+}
+
+.brand-item-medinfo .con-list li {
+  display: inline-block;
+  width: 23.5%;
+  margin-right: 1.6%;
+  margin-bottom: 24px;
+  vertical-align: top;
+  position: relative;
+}
+
+.brand-item-medinfo .con-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.brand-item-medinfo .con-list li > a {
+  display: block;
+}
+
+.brand-item-medinfo .con-list li:hover .icon {
+  display: block;
+}
+
+.brand-item-medinfo .con-list .pic {
+  height: 158px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.brand-item-medinfo .con-list .pic > .icon {
+  display: none;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.brand-item-medinfo .con-list .label {
+  width: 100%;
+  font-size: 16px;
+  color: #2A2E2E;
+  text-align: center;
+  line-height: 29px;
+}
+
+.brand-item-medinfo .con-list .look-all {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 82, 217, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.brand-item-medinfo .con-list .look-all > .label {
+  color: #fff;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.brand-item-medinfo .con-list .look-all > .desc {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+}
+/*# sourceMappingURL=media.css.map */

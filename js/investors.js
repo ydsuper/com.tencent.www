@@ -45,6 +45,52 @@ $(function () {
     })
 
 
+    // investors-Elevator导航
+    let navTop = $('.ele-navigation').offset().top;
+    let navTopArr = []; // navTop数据
+    $('[id^="investors-con"]').each(function (i) {
+        navTopArr.push(parseInt($(this).offset().top));
+    })
+    // 滚动事件
+    $(window).scroll(function () {
+        let v = $(this).scrollTop();
+        if (v >= navTop) {
+            $('.ele-navigation').addClass('fixed');
+        } else {
+            $('.ele-navigation').removeClass('fixed');
+        }
+
+        // 校准对应栏
+        $.each(navTopArr, function (i, top) {
+            if (v >= top) {
+                $('.underline').stop().animate({
+                    left: $('.ele-navigation li').eq(i).position().left,
+                    width: $('.ele-navigation li').eq(i).width()
+                }, 200)
+            }
+        })
+    })
+
+    // 点击滑动
+    $('.ele-navigation li').click(function () {
+        showHeadState = false; // 关闭状态
+        // underline
+        $('.underline').stop().animate({
+            left: $(this).position().left,
+            width: $(this).width()
+        }, 200)
+        // 滑动
+        let index = $(this).index();
+        let skipTop = navTopArr[index];
+        $('html,body').stop().animate({
+            scrollTop: skipTop
+        }, 200);
+
+        // 延时 可显示状态true
+        setTimeout(function () {
+            showHeadState = true;
+        }, 300)
+    })
 
 
 
@@ -56,6 +102,5 @@ $(function () {
 
 
 
-    
 
 })
