@@ -1,0 +1,62 @@
+.wrap {}
+
+// 主体
+.wrap-main {
+    width: 100%;
+    margin-top: 72px;
+
+    .main-con {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .enquiryform-con {
+        width: 1200px;
+        color: #222;
+        margin: 80px auto 40px;
+    }
+}
+
+// 表单
+.enquiryform-con {
+
+    h2 {
+        color: #2a2e2e;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: PingFangSC-Semibold,
+            'Microsoft YaHei';
+        margin-bottom: 20px;
+    }
+
+    .enquiryField-con {
+        width: 100%;
+        background-color: #fbfbfb;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+
+    .enquiryField-area {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .row{
+        overflow: hidden;
+
+        >h3{
+            float: left;
+            width: 160px;
+            color: #222;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: PingFangSC-Regular,
+            'Microsoft YaHei';
+            box-sizing: border-box;
+            text-align: right;
+            line-height: 36px;
+            padding-right: 24px;
+        }
+    }
+
+}

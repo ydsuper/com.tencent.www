@@ -1,7 +1,3 @@
-body {
-  height: 6333px;
-}
-
 .wrap-main {
   width: 100%;
   margin-top: 72px;
@@ -460,6 +456,7 @@ body {
 }
 
 .brand-item-medinfo .tab-con .con-ul {
+  height: 455px;
   padding-top: 40px;
 }
 
@@ -539,5 +536,185 @@ body {
   font-size: 14px;
   text-align: center;
   line-height: 25px;
+}
+
+.link-box {
+  padding-top: 0 !important;
+}
+
+.link-box a {
+  display: block;
+  position: relative;
+}
+
+.link-box .jons-bg {
+  width: 100%;
+}
+
+.link-box .mess {
+  position: absolute;
+  top: 132px;
+  left: 78px;
+}
+
+.link-box .mess > h2 {
+  color: #2a2e2e;
+  font-size: 30px;
+  font-family: 'TencentSansw7';
+}
+
+.link-box .go-link {
+  line-height: 36px;
+  margin-top: 16px;
+}
+
+.link-box .go-link > .label {
+  float: left;
+  color: #0052d9;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 9px;
+}
+
+.link-box .go-link > .go-icon {
+  height: 36px;
+  overflow: hidden;
+}
+
+.link-box .go-link > .go-icon > img {
+  width: 19px;
+  margin-top: 10px;
+}
+
+.video-pop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.video-pop .pop-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-pop .pop-box {
+  width: 1200px;
+  height: 675px;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.video-pop .pop-box .close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.video-pop .pop-box .video {
+  width: 100%;
+  height: 100%;
+}
+
+.image-pop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.image-pop .pop-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-pop .pop-box {
+  width: 1200px;
+  height: 900px;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.image-pop .pop-box .close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.image-pop .pop-box .pic-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-pop .pop-box .pic-list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-pop .pop-box .active-pic {
+  display: block;
+}
+
+.image-pop .btn {
+  width: 60px;
+  height: 60px;
+  background: #919797;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.image-pop .btn > img {
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.image-pop .pre-btn {
+  left: 0;
+}
+
+.image-pop .next-btn {
+  right: 0;
 }
 /*# sourceMappingURL=media.css.map */
