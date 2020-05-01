@@ -36,7 +36,8 @@
 }
 
 .enquiryform-con .row {
-  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .enquiryform-con .row > h3 {
@@ -51,5 +52,202 @@
   text-align: right;
   line-height: 36px;
   padding-right: 24px;
+}
+
+.enquiryform-con .row input {
+  width: 520px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2a2e2e;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, 'Microsoft Yahei', 'Microsoft JhengHei', arial, sans-serif;
+  text-align: left;
+  line-height: 36px;
+  padding: 0 18px;
+  border: 1px solid #f2f3f5;
+  background-color: #fff;
+}
+
+.enquiryform-con .row input:focus {
+  border: 1px solid #D8D9DC;
+  -webkit-box-shadow: inset 0 1px 3px 0 #fff;
+          box-shadow: inset 0 1px 3px 0 #fff;
+}
+
+.enquiryform-con .row .errorNote {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ff3e00;
+  line-height: 36px;
+  margin: 1px 18px;
+}
+
+.enquiryform-con .inputError .errorNote {
+  display: block;
+}
+
+.enquiryform-con .inputError .errorhide {
+  display: none;
+}
+
+.enquiryform-con .inputError input {
+  border: 1px solid #ff3e00;
+}
+
+.enquiryform-con .inputError .select-selected {
+  border: 1px solid #ff3e00;
+}
+
+.enquiryform-con .select-selected {
+  width: 520px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  color: #2a2e2e;
+  border: 1px solid #f2f3f5;
+  padding: 8px 16px;
+  background: #fff url(../images/enquiry/icon_arrowdown.png) no-repeat center right 20px;
+  background-size: auto 12px;
+  cursor: pointer;
+}
+
+.enquiryform-con .select-selected.active-arrow {
+  background-image: url(../images/enquiry/icon_arrowup.png);
+  border: 1px solid #D8D9DC;
+  border-bottom: 1px solid transparent;
+}
+
+.enquiryform-con .select-items {
+  width: 520px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  z-index: 99;
+  border-bottom: 1px solid #D8D9DC;
+}
+
+.enquiryform-con .select-items > div {
+  color: #2a2e2e;
+  border-left: 1px solid #D8D9DC;
+  border-right: 1px solid #D8D9DC;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.enquiryform-con .select-items > div:hover {
+  background-color: #f2f3f5;
+}
+
+.enquiryform-con .select-items .select-disabled {
+  height: 1px;
+  color: #fff;
+  background-color: #fff;
+  padding: 0;
+  overflow: hidden;
+  cursor: default;
+}
+
+.enquiryform-con .enquiryHide {
+  display: none;
+}
+
+.enquiryform-con .select-hide {
+  display: none;
+}
+
+.enquiryform-con .textarea {
+  width: 520px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2a2e2e;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, 'Microsoft Yahei', 'Microsoft JhengHei', arial, sans-serif;
+  line-height: normal;
+  padding: 7px 18px 40px;
+  text-align: left;
+  border: 1px solid #f2f3f5;
+  background-color: #fff;
+}
+
+.enquiryform-con .textarea:focus {
+  border: 1px solid #D8D9DC;
+  -webkit-box-shadow: inset 0 1px 3px 0 #fff;
+          box-shadow: inset 0 1px 3px 0 #fff;
+}
+
+.enquiryform-con .textAreaBox .countArea {
+  position: absolute;
+  bottom: 0;
+  left: 160px;
+  color: #999;
+  text-align: left;
+  margin: 1px 18px;
+  line-height: 36px;
+}
+
+.enquiryform-con .vcodeImgArea {
+  height: 100%;
+  width: auto;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.enquiryform-con .vcodeImgArea .errorNote {
+  position: absolute;
+  right: 174px;
+  width: 112px;
+  margin: 0;
+}
+
+.enquiryform-con .vcodeImgArea #vcodeRefresh {
+  width: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  position: absolute;
+  left: -48px;
+  top: 7px;
+}
+
+.enquiryform-con .vcodeImgArea #vcodeImg {
+  width: 120px;
+  height: 36px;
+}
+
+.enquiryform-con .btn {
+  margin: 0 0 20px 160px;
+}
+
+.enquiryform-con .btn input {
+  width: auto;
+  color: #fff;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, 'Microsoft Yahei', 'Microsoft JhengHei', arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 36px;
+  padding: 0 30px;
+}
+
+.enquiryform-con .btn #submit {
+  background-color: #0052D9;
+  border: 1px solid #F2F3F5;
+  cursor: pointer;
+}
+
+.enquiryform-con .btn #reset {
+  color: #9EA4A4;
+  background-color: #FBFBFB;
+  border: 1px solid #FBFBFB;
+  cursor: pointer;
+  margin-left: 13.13px;
 }
 /*# sourceMappingURL=enquiry.css.map */
