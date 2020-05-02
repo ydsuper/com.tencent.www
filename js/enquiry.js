@@ -30,34 +30,38 @@ $(function () {
         // 判断内容
         if ($('#message').val().trim()) {
             $flag = true;
-            $('.row .errorNote').each(function (i, ipt) {
-                $(this).removeClass('errorhide');
-            })
-            // 是否为空
-            $('.row input').each(function (i, ipt) {
-                $('#submit').val('正在提交');
-                setTimeout(function () {
-                    if (!smFlag) $('#submit').val('提交');
-                    if (!$(ipt).val().trim()) {
-                        $(ipt).parent('.row').addClass('inputError');
-                    }
-                    $('.select-selected').each(function (i, sele) {
-                        if ($(this).text() == '- 请选择 -') {
-                            $(this).parent('.row').addClass('inputError');
+            if (!isApply) {
+                $('.row .errorNote').each(function (i, ipt) {
+                    $(this).removeClass('errorhide');
+                })
+                // 是否为空
+                $('.row input').each(function (i, ipt) {
+                    $('#submit').val('正在提交');
+                    setTimeout(function () {
+                        if (!smFlag) $('#submit').val('提交');
+                        if (!$(ipt).val().trim()) {
+                            $(ipt).parent('.row').addClass('inputError');
                         }
-                    })
-                }, 150)
-            })
+                        $('.select-selected').each(function (i, sele) {
+                            if ($(this).text() == '- 请选择 -') {
+                                $(this).parent('.row').addClass('inputError');
+                            }
+                        })
+                    }, 150)
+                })
+            }
         } else {
             $flag = false;
-            $('#submit').val('正在提交');
-            setTimeout(function () {
-                alert('请输入内容');
-                $('#submit').val('提交');
-            }, 150)
-            $('.row .errorNote').each(function (i, ipt) {
-                $(this).addClass('errorhide');
-            })
+            if (!isApply) {
+                $('#submit').val('正在提交');
+                setTimeout(function () {
+                    alert('请输入内容');
+                    $('#submit').val('提交');
+                }, 150)
+                $('.row .errorNote').each(function (i, ipt) {
+                    $(this).addClass('errorhide');
+                })
+            }
         }
 
     })
@@ -127,14 +131,16 @@ $(function () {
     //  verifyCode.validate('校验的值'); //如果校验正确返回ture，校验错误返回false
 
     $('#submit').click(function () {
-        // 判断 $flag
-        if ($flag) {
-            let val = $('#vcode').val();
+        if (!isApply) {
+            // 判断 $flag
+            if ($flag) {
+                let val = $('#vcode').val();
 
-            if (verifyCode.validate(val)) {
-                $('#vcode').parent('.row').removeClass('inputError');
-            } else {
-                $('#vcode').parent('.row').addClass('inputError');
+                if (verifyCode.validate(val)) {
+                    $('#vcode').parent('.row').removeClass('inputError');
+                } else {
+                    $('#vcode').parent('.row').addClass('inputError');
+                }
             }
         }
 
@@ -143,23 +149,25 @@ $(function () {
 
     // 邮箱
     $('#submit').click(function () {
-        // 判断 $flag
-        if ($flag) {
-            let email = $('#email').val();
-            let flag = email.indexOf('@');
-            let onlyFlag = email.split('@');
-            setTimeout(function () {
-                if (flag == -1 || flag == 0 || flag == email.length - 1 || onlyFlag.length != 2) {
-                    $('#email').parent('.row').addClass('inputError');
-                } else {
-                    $('#email').parent('.row').removeClass('inputError');
-                }
-            }, 150)
+        if (!isApply) {
+            // 判断 $flag
+            if ($flag) {
+                let email = $('#email').val();
+                let flag = email.indexOf('@');
+                let onlyFlag = email.split('@');
+                setTimeout(function () {
+                    if (flag == -1 || flag == 0 || flag == email.length - 1 || onlyFlag.length != 2) {
+                        $('#email').parent('.row').addClass('inputError');
+                    } else {
+                        $('#email').parent('.row').removeClass('inputError');
+                    }
+                }, 150)
+            }
         }
 
     })
 
-    
+
     // 重置
     $('#reset').click(function () {
         $('.select-items:eq(1) div').one('click', resetSele)
@@ -174,20 +182,73 @@ $(function () {
 
 
     // 提交成功
+    let isApply = false;
     $('#submit').click(function () {
         $('#submit').val('正在提交');
         let flag = $flag && $('.row.inputError').length == 0;
+        let date = getTimeD();
+        let nowDate = +new Date();
         if (flag) smFlag = true;
         setTimeout(function () {
-            if (flag) {
-                alert('您的查询已经提交，谢谢。');
-                $('#reset').click();
-                $('#submit').val('提交');
-                smFlag = false;
+            if (date == null) {
+                if (flag) {
+                    apply();
+                    setTimeD() // 存储时间D
+                }
+            } else {
+                if (nowDate - date >= 5000) {
+                    if (flag) {
+                        apply();
+                        setTimeD() // 存储时间D
+                    } else {
+                        isApply = false;
+                        smFlag = false;
+                        $('#submit').val('提交');
+                    }
+                } else {
+                    apply();
+                }
             }
+
         }, 150)
 
     })
 
+
+    // 提交申请中 初始化
+    applyStart();
+
+    function applyStart() {
+        let date = getTimeD();
+        if (date == null) {
+            isApply = false;
+        } else {
+            let nowDate = +new Date();
+            if (nowDate - date >= 5000) {
+                isApply = false;
+            } else {
+                isApply = true;
+            }
+        }
+    }
+    // 提交申请
+    function apply() {
+        alert('您的查询已经提交，谢谢。');
+        $('#reset').click();
+        $('#submit').val('提交');
+        smFlag = false;
+        isApply = true;
+    }
+
+
+    // 设置时间D
+    function setTimeD() {
+        console.log(1);
+        localStorage.setItem('timeD', JSON.stringify(+new Date()));
+    }
+    // 获取时间D
+    function getTimeD() {
+        return JSON.parse(localStorage.getItem('timeD'));
+    }
 
 })
