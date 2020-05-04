@@ -196,7 +196,7 @@ $(function () {
                     setTimeD() // 存储时间D
                 }
             } else {
-                if (nowDate - date >= 5000) {
+                if (nowDate - date >= 600000) {
                     if (flag) {
                         apply();
                         setTimeD() // 存储时间D
@@ -224,7 +224,7 @@ $(function () {
             isApply = false;
         } else {
             let nowDate = +new Date();
-            if (nowDate - date >= 5000) {
+            if (nowDate - date >= 600000) {
                 isApply = false;
             } else {
                 isApply = true;
