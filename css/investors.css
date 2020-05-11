@@ -69,9 +69,14 @@
 }
 
 .mod-elevator .ele-nav-list > li > a {
+  color: #5F6464;
   height: 53px;
   line-height: 53px;
   font-size: 16px;
+}
+
+.mod-elevator .ele-nav-list > li.active-ele > a {
+  color: #2a2e2e;
 }
 
 .mod-elevator .ele-nav-list .underline {

@@ -195,19 +195,31 @@ $(function () {
         }
 
         // 校准对应栏
-        $.each(navTopArr, function (i, top) {
-            if (v >= top) {
-                $('.underline').stop().animate({
-                    left: $('.ele-navigation li').eq(i).position().left,
-                    width: $('.ele-navigation li').eq(i).width()
-                }, 200)
-            }
-        })
+        if ($flag) {
+            $.each(navTopArr, function (i, top) {
+                if (v >= top) {
+                    setTimeout(function () {
+                        $('.ele-navigation li').eq(i).addClass('active-ele').siblings('li').removeClass('active-ele');
+                    }, 200);
+                    $('.underline').stop().animate({
+                        left: $('.ele-navigation li').eq(i).position().left,
+                        width: $('.ele-navigation li').eq(i).width()
+                    }, 200)
+                }
+            })
+        }
     })
 
     // 点击滑动
+    let $flag = true;
     $('.ele-navigation li').click(function () {
+        $flag = false; // 节流滚动
         showHeadState = false; // 关闭状态
+        // active-ele
+        let $this = this;
+        setTimeout(function () {
+            $($this).addClass('active-ele').siblings('li').removeClass('active-ele');
+        }, 200);
         // underline
         $('.underline').stop().animate({
             left: $(this).position().left,
@@ -224,6 +236,10 @@ $(function () {
         setTimeout(function () {
             showHeadState = true;
         }, 300)
+        // 滚动节流
+        setTimeout(function () {
+            $flag = true;
+        }, 400);
     })
 
 

@@ -74,9 +74,16 @@
             margin-right: 56px;
 
             >a {
+                color: #5F6464;
                 height: 53px;
                 line-height: 53px;
                 font-size: 16px;
+            }
+
+            &.active-ele {
+                >a {
+                    color: #2a2e2e;
+                }
             }
         }
 
